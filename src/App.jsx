@@ -5,6 +5,9 @@ import More from './routes/More.jsx';
 import Settings from './routes/Settings.jsx';
 import Resources from './routes/Resources.jsx';
 import Vocab from './routes/Vocab.jsx';
+import Mocks from './routes/Mocks.jsx';
+import MockNew from './routes/MockNew.jsx';
+import MockDetail from './routes/MockDetail.jsx';
 import Placeholder from './routes/Placeholder.jsx';
 import BottomNav from './components/BottomNav.jsx';
 import InstallPrompt from './components/InstallPrompt.jsx';
@@ -19,8 +22,9 @@ export default function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/vocab" element={<Vocab />} />
-        <Route path="/mocks" element={<Placeholder title="Mock tests" sprint="Sprint 2" />} />
-        <Route path="/mocks/:id" element={<Placeholder title="Mock details" sprint="Sprint 2" />} />
+        <Route path="/mocks" element={<Mocks />} />
+        <Route path="/mocks/new" element={<MockNew />} />
+        <Route path="/mocks/:id" element={<MockDetail />} />
         <Route path="/errors" element={<Placeholder title="Error log" sprint="Sprint 2" />} />
         <Route path="/writing" element={<Placeholder title="Writing" sprint="Sprint 3" />} />
         <Route path="/speaking" element={<Placeholder title="Speaking" sprint="Sprint 3" />} />
