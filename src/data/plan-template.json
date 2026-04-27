@@ -1,0 +1,118 @@
+{
+  "phases": [
+    { "id": "diagnostic", "label": "Diagnóstico", "color": "phase-diagnostic", "range": [1, 4] },
+    { "id": "build", "label": "Construcción", "color": "phase-build", "range": [5, 20] },
+    { "id": "mocks", "label": "Simulacros intensivos", "color": "phase-mocks", "range": [21, 35] },
+    { "id": "refine", "label": "Refinamiento", "color": "phase-refine", "range": [36, 42] },
+    { "id": "taper", "label": "Taper", "color": "phase-taper", "range": [43, 45] }
+  ],
+  "skillFocusByDayOfWeek": {
+    "1": "listening",
+    "2": "reading",
+    "3": "writing",
+    "4": "speaking",
+    "5": "writing",
+    "6": "reading",
+    "0": "listening"
+  },
+  "days": {
+    "1": {
+      "title": "Diagnóstico inicial",
+      "blocks": [
+        { "skill": "diagnostic", "label": "Mock test completo Cambridge 17 Test 1 (timing real)", "minutes": 170, "intensity": "heavy" },
+        { "skill": "review", "label": "Análisis de errores + cargar al error log", "minutes": 30, "intensity": "medium" },
+        { "skill": "vocab", "label": "Energy check + 15 palabras AWL iniciales", "minutes": 25, "intensity": "light" }
+      ]
+    },
+    "2": {
+      "title": "Familiarización formato",
+      "blocks": [
+        { "skill": "reading", "label": "Familiarización formato Reading + tipos de pregunta", "minutes": 30, "intensity": "light" },
+        { "skill": "listening", "label": "Familiarización formato Listening + sections", "minutes": 30, "intensity": "light" },
+        { "skill": "vocab", "label": "AWL inicial: 30 palabras", "minutes": 30, "intensity": "medium" },
+        { "skill": "writing", "label": "Plantillas Writing Task 1 (line graph)", "minutes": 45, "intensity": "medium" },
+        { "skill": "speaking", "label": "Speaking Part 1 grabado: work, hometown", "minutes": 20, "intensity": "light" }
+      ]
+    },
+    "3": {
+      "title": "Plantillas y técnica",
+      "blocks": [
+        { "skill": "writing", "label": "Plantillas Writing Task 2 (opinion + discussion)", "minutes": 60, "intensity": "medium" },
+        { "skill": "reading", "label": "Técnica Matching Headings: 1 set guiado", "minutes": 45, "intensity": "medium" },
+        { "skill": "listening", "label": "UK accent exposure pasivo (BBC podcast)", "minutes": 45, "intensity": "light" },
+        { "skill": "speaking", "label": "Speaking Part 2: 3 cue cards grabadas", "minutes": 30, "intensity": "medium" }
+      ]
+    },
+    "4": {
+      "title": "Mini-mock skills receptivas",
+      "blocks": [
+        { "skill": "listening", "label": "Mock Listening completo (timing real)", "minutes": 40, "intensity": "heavy" },
+        { "skill": "reading", "label": "Mock Reading completo (timing real)", "minutes": 60, "intensity": "heavy" },
+        { "skill": "review", "label": "Revisión + error log", "minutes": 60, "intensity": "medium" },
+        { "skill": "vocab", "label": "30 palabras AWL", "minutes": 30, "intensity": "light" }
+      ]
+    },
+    "default_build": {
+      "title": "Construcción",
+      "blocks": [
+        { "skill": "primary", "label": "Skill primary del día (técnica + 1 set)", "minutes": 60, "intensity": "medium" },
+        { "skill": "writing", "label": "Writing daily (T1 o T2 alternando)", "minutes": 45, "intensity": "medium" },
+        { "skill": "vocab", "label": "Vocab SRS + nuevas palabras", "minutes": 30, "intensity": "light" },
+        { "skill": "listening", "label": "Listening shadowing UK", "minutes": 30, "intensity": "light" },
+        { "skill": "speaking", "label": "Speaking grabado 1 part", "minutes": 20, "intensity": "light" }
+      ]
+    },
+    "default_mocks_mockDay": {
+      "title": "Día de simulacro",
+      "blocks": [
+        { "skill": "mock", "label": "Mock completo (timing real)", "minutes": 170, "intensity": "heavy" },
+        { "skill": "review", "label": "Análisis de errores + actualizar error log", "minutes": 45, "intensity": "medium" },
+        { "skill": "vocab", "label": "Vocab SRS rápido", "minutes": 20, "intensity": "light" }
+      ]
+    },
+    "default_mocks_recoveryDay": {
+      "title": "Recovery + práctica focalizada",
+      "blocks": [
+        { "skill": "review", "label": "Revisión profunda de errores del último mock", "minutes": 45, "intensity": "medium" },
+        { "skill": "writing", "label": "Writing sample con BandRubric", "minutes": 50, "intensity": "medium" },
+        { "skill": "primary", "label": "Práctica focalizada en debilidad detectada", "minutes": 50, "intensity": "medium" },
+        { "skill": "vocab", "label": "Vocab SRS", "minutes": 25, "intensity": "light" }
+      ]
+    },
+    "default_refine": {
+      "title": "Refinamiento",
+      "blocks": [
+        { "skill": "speaking", "label": "Speaking diario (foco Part 2 fluidez)", "minutes": 30, "intensity": "medium" },
+        { "skill": "writing", "label": "Writing sample (review profundo)", "minutes": 60, "intensity": "medium" },
+        { "skill": "review", "label": "Repaso error log abierto", "minutes": 30, "intensity": "medium" },
+        { "skill": "vocab", "label": "Vocab SRS", "minutes": 25, "intensity": "light" }
+      ]
+    },
+    "43": {
+      "title": "Taper día 1: mock light",
+      "blocks": [
+        { "skill": "listening", "label": "Mock light: solo Listening", "minutes": 40, "intensity": "medium" },
+        { "skill": "reading", "label": "Mock light: solo Reading", "minutes": 60, "intensity": "medium" },
+        { "skill": "speaking", "label": "Speaking practice relajada (Part 1)", "minutes": 20, "intensity": "light" },
+        { "skill": "vocab", "label": "Repaso vocab problemático", "minutes": 25, "intensity": "light" }
+      ]
+    },
+    "44": {
+      "title": "Taper día 2: repaso ligero",
+      "blocks": [
+        { "skill": "review", "label": "Repaso error log completo", "minutes": 45, "intensity": "light" },
+        { "skill": "writing", "label": "Plantillas mentales Writing (sin escribir)", "minutes": 30, "intensity": "light" },
+        { "skill": "vocab", "label": "Vocab SRS suave", "minutes": 30, "intensity": "light" },
+        { "skill": "rest", "label": "Descanso activo: caminata, hidratación, dormir bien", "minutes": 0, "intensity": "rest" }
+      ]
+    },
+    "45": {
+      "title": "Día previo al examen: descanso",
+      "blocks": [
+        { "skill": "rest", "label": "Logística: documentos, ruta, alarma, materiales", "minutes": 30, "intensity": "rest" },
+        { "skill": "rest", "label": "Comida liviana, hidratación, sin material nuevo", "minutes": 0, "intensity": "rest" },
+        { "skill": "rest", "label": "Dormir 8h. Confianza.", "minutes": 0, "intensity": "rest" }
+      ]
+    }
+  }
+}
