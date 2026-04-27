@@ -93,7 +93,7 @@ export default function Home() {
           <OutOfPlanCard remaining={remaining} examDate={examDate} />
         ) : null}
 
-        <ResourceOfDay phase={today?.phase} date={todayKey()} />
+        {today ? <ResourceOfDay phase={today.phase} date={todayKey()} /> : null}
 
         <QuickStats />
       </main>
