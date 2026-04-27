@@ -5,6 +5,7 @@ import {
   AlertTriangle,
   LineChart,
   Download,
+  Library,
   Settings as SettingsIcon,
   ChevronRight,
 } from 'lucide-react';
@@ -15,6 +16,7 @@ const ITEMS = [
   { to: '/speaking', label: 'Speaking', desc: 'Recorder + cue cards', icon: Mic },
   { to: '/errors', label: 'Errores', desc: 'Error log auto-generado', icon: AlertTriangle },
   { to: '/tracking', label: 'Tracking', desc: 'Stats + predictor de banda', icon: LineChart },
+  { to: '/resources', label: 'Recursos', desc: 'Catálogo curado de mocks, samples, vocab', icon: Library },
   { to: '/export', label: 'Export', desc: 'Paquete Markdown para coach', icon: Download },
   { to: '/settings', label: 'Settings', desc: 'Examen, theme, reset', icon: SettingsIcon },
 ];

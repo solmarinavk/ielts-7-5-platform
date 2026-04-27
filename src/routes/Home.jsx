@@ -8,6 +8,7 @@ import TopBar from '../components/TopBar.jsx';
 import StreakBadge from '../components/StreakBadge.jsx';
 import EnergyMeter from '../components/EnergyMeter.jsx';
 import DayCard from '../components/DayCard.jsx';
+import ResourceOfDay from '../components/ResourceOfDay.jsx';
 import { Settings as SettingsIcon, Calendar, AlertCircle } from 'lucide-react';
 
 function greet() {
@@ -91,6 +92,8 @@ export default function Home() {
         ) : examDate ? (
           <OutOfPlanCard remaining={remaining} examDate={examDate} />
         ) : null}
+
+        <ResourceOfDay phase={today?.phase} date={todayKey()} />
 
         <QuickStats />
       </main>
