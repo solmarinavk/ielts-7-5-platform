@@ -448,5 +448,230 @@
     "collocations": ["underpin the argument", "underpin democracy", "firmly underpin"],
     "level": 3,
     "tags": ["task2", "argument"]
+  },
+  {
+    "word": "furthermore",
+    "partOfSpeech": "linker",
+    "definition": "used to add a further point that strengthens what was just said",
+    "exampleIELTS": "Public transport is more efficient than private cars; furthermore, it produces significantly less pollution per passenger.",
+    "collocations": ["furthermore, ...", "and furthermore", "what is more"],
+    "level": 1,
+    "tags": ["linker", "addition"]
+  },
+  {
+    "word": "moreover",
+    "partOfSpeech": "linker",
+    "definition": "used to add information that strengthens or extends the previous point",
+    "exampleIELTS": "Working from home reduces commuting time; moreover, it allows employees greater control over their schedule.",
+    "collocations": ["moreover, ...", "and moreover", "moreover, this means"],
+    "level": 1,
+    "tags": ["linker", "addition"]
+  },
+  {
+    "word": "by contrast",
+    "partOfSpeech": "linker",
+    "definition": "used to compare two things and emphasise their difference",
+    "exampleIELTS": "France relies heavily on nuclear power, whereas Germany, by contrast, has invested predominantly in renewables.",
+    "collocations": ["by contrast, ...", "in sharp contrast", "stand in contrast to"],
+    "level": 2,
+    "tags": ["linker", "contrast"]
+  },
+  {
+    "word": "on the other hand",
+    "partOfSpeech": "linker",
+    "definition": "used to introduce a contrasting view or aspect",
+    "exampleIELTS": "Online learning offers flexibility; on the other hand, it can leave less motivated students isolated.",
+    "collocations": ["on the other hand, ...", "but on the other hand", "yet on the other hand"],
+    "level": 1,
+    "tags": ["linker", "contrast"]
+  },
+  {
+    "word": "conversely",
+    "partOfSpeech": "linker",
+    "definition": "introducing a statement that reverses the one just made",
+    "exampleIELTS": "Higher taxes on tobacco reduce consumption; conversely, lowering them has historically led to a rise in smoking rates.",
+    "collocations": ["conversely, ...", "or conversely"],
+    "level": 3,
+    "tags": ["linker", "contrast"]
+  },
+  {
+    "word": "nonetheless",
+    "partOfSpeech": "linker",
+    "definition": "in spite of what has just been said",
+    "exampleIELTS": "The proposal has clear flaws; nonetheless, it represents a step in the right direction.",
+    "collocations": ["nonetheless, ...", "remain nonetheless"],
+    "level": 2,
+    "tags": ["linker", "concession"]
+  },
+  {
+    "word": "consequently",
+    "partOfSpeech": "linker",
+    "definition": "as a logical or direct result of something",
+    "exampleIELTS": "Many young adults postpone home ownership; consequently, the average age of first-time buyers has risen sharply.",
+    "collocations": ["consequently, ...", "and consequently"],
+    "level": 1,
+    "tags": ["linker", "consequence"]
+  },
+  {
+    "word": "accordingly",
+    "partOfSpeech": "linker",
+    "definition": "in a way that is suitable to the circumstances; therefore",
+    "exampleIELTS": "Demand for plant-based products has grown rapidly, and supermarkets have adjusted their offerings accordingly.",
+    "collocations": ["adjust accordingly", "act accordingly", "respond accordingly"],
+    "level": 2,
+    "tags": ["linker", "consequence"]
+  },
+  {
+    "word": "owing to",
+    "partOfSpeech": "linker",
+    "definition": "because of; due to",
+    "exampleIELTS": "Owing to falling birth rates, several European countries are now relying heavily on immigration to maintain their workforce.",
+    "collocations": ["owing to a rise in", "owing largely to", "owing to the fact that"],
+    "level": 2,
+    "tags": ["linker", "cause"]
+  },
+  {
+    "word": "in light of",
+    "partOfSpeech": "linker",
+    "definition": "taking into account; given that",
+    "exampleIELTS": "In light of recent scientific findings, several governments have updated their dietary guidelines.",
+    "collocations": ["in light of evidence", "in light of recent", "viewed in light of"],
+    "level": 2,
+    "tags": ["linker", "cause"]
+  },
+  {
+    "word": "for instance",
+    "partOfSpeech": "linker",
+    "definition": "used to introduce a specific example",
+    "exampleIELTS": "Many countries have moved towards cashless economies; Sweden, for instance, expects to eliminate physical currency by 2030.",
+    "collocations": ["for instance, ...", "as for instance"],
+    "level": 1,
+    "tags": ["linker", "example"]
+  },
+  {
+    "word": "to illustrate",
+    "partOfSpeech": "linker",
+    "definition": "used to introduce an example that clarifies the previous point",
+    "exampleIELTS": "Renewable energy is now cost-competitive. To illustrate, the price of solar power has fallen by almost 90% in a decade.",
+    "collocations": ["to illustrate this point", "to illustrate, ..."],
+    "level": 2,
+    "tags": ["linker", "example"]
+  },
+  {
+    "word": "a case in point",
+    "partOfSpeech": "phrase",
+    "definition": "an especially clear example that proves the point being made",
+    "exampleIELTS": "Some cities have transformed their air quality through bold policy. London's ultra-low emission zone is a case in point.",
+    "collocations": ["A case in point is...", "is a clear case in point"],
+    "level": 3,
+    "tags": ["linker", "example"]
+  },
+  {
+    "word": "admittedly",
+    "partOfSpeech": "linker",
+    "definition": "used to acknowledge something that weakens your point, before answering it",
+    "exampleIELTS": "Admittedly, electric vehicles still have a sizeable carbon footprint at production; however, their lifecycle emissions remain far lower than those of petrol cars.",
+    "collocations": ["admittedly, ...", "admittedly small", "admittedly limited"],
+    "level": 3,
+    "tags": ["linker", "concession"]
+  },
+  {
+    "word": "granted",
+    "partOfSpeech": "linker",
+    "definition": "used to acknowledge a point before pushing back on it",
+    "exampleIELTS": "Granted, social media can spread misinformation; even so, it remains a crucial tool for civic engagement.",
+    "collocations": ["granted, ...", "granted that"],
+    "level": 3,
+    "tags": ["linker", "concession"]
+  },
+  {
+    "word": "on balance",
+    "partOfSpeech": "linker",
+    "definition": "considering all the arguments together; overall",
+    "exampleIELTS": "On balance, the benefits of compulsory voting outweigh the practical drawbacks for most established democracies.",
+    "collocations": ["on balance, ...", "on balance, it is fair to say"],
+    "level": 2,
+    "tags": ["linker", "conclusion"]
+  },
+  {
+    "word": "arguably",
+    "partOfSpeech": "adverb",
+    "definition": "used to express a strong but not certain opinion",
+    "exampleIELTS": "Climate change is arguably the most pressing collective challenge of the twenty-first century.",
+    "collocations": ["arguably the most", "arguably the best", "arguably the cause"],
+    "level": 2,
+    "tags": ["linker", "hedging"]
+  },
+  {
+    "word": "ostensibly",
+    "partOfSpeech": "adverb",
+    "definition": "as appears to be the case, though perhaps not really so",
+    "exampleIELTS": "The policy is ostensibly designed to protect consumers, although critics suggest its primary aim is political.",
+    "collocations": ["ostensibly designed to", "ostensibly aimed at"],
+    "level": 3,
+    "tags": ["linker", "hedging"]
+  },
+  {
+    "word": "notwithstanding",
+    "partOfSpeech": "linker",
+    "definition": "in spite of; without being prevented by",
+    "exampleIELTS": "Notwithstanding recent improvements, the gender pay gap remains a stubborn feature of most labour markets.",
+    "collocations": ["notwithstanding the fact", "this notwithstanding", "notwithstanding criticism"],
+    "level": 3,
+    "tags": ["linker", "concession"]
+  },
+  {
+    "word": "albeit",
+    "partOfSpeech": "linker",
+    "definition": "although; even though (used to introduce a qualifying clause)",
+    "exampleIELTS": "Living standards continued to improve, albeit at a slower pace than in previous decades.",
+    "collocations": ["albeit slowly", "albeit briefly", "albeit reluctantly"],
+    "level": 3,
+    "tags": ["linker", "concession"]
+  },
+  {
+    "word": "to a large extent",
+    "partOfSpeech": "phrase",
+    "definition": "mostly; largely true but with some qualification",
+    "exampleIELTS": "To a large extent, individual habits are shaped by the environment in which a person grows up.",
+    "collocations": ["to a large extent, ...", "true to a large extent"],
+    "level": 2,
+    "tags": ["linker", "hedging"]
+  },
+  {
+    "word": "on the whole",
+    "partOfSpeech": "linker",
+    "definition": "considering everything; in general",
+    "exampleIELTS": "On the whole, students who learn a second language before adolescence achieve a more native-like accent.",
+    "collocations": ["on the whole, ...", "on the whole positive", "on the whole successful"],
+    "level": 2,
+    "tags": ["linker", "conclusion"]
+  },
+  {
+    "word": "with regard to",
+    "partOfSpeech": "phrase",
+    "definition": "concerning; in relation to a particular topic",
+    "exampleIELTS": "With regard to childhood obesity, school nutrition policies have proved more effective than public awareness campaigns.",
+    "collocations": ["with regard to this issue", "with regard to public health"],
+    "level": 2,
+    "tags": ["linker", "topic"]
+  },
+  {
+    "word": "in essence",
+    "partOfSpeech": "linker",
+    "definition": "used to summarise the central point of an argument",
+    "exampleIELTS": "In essence, the debate is not about whether technology should be regulated, but about how.",
+    "collocations": ["in essence, ...", "in essence, this means"],
+    "level": 3,
+    "tags": ["linker", "summary"]
+  },
+  {
+    "word": "to sum up",
+    "partOfSpeech": "linker",
+    "definition": "used to introduce a brief summary at the end of an argument",
+    "exampleIELTS": "To sum up, while urbanisation has clear economic benefits, it places considerable strain on housing and infrastructure.",
+    "collocations": ["to sum up, ...", "to sum up briefly"],
+    "level": 1,
+    "tags": ["linker", "summary"]
   }
 ]
