@@ -12,7 +12,7 @@ export default function TopBar({ title, back = false, right = null }) {
         {showBack ? (
           <button
             onClick={() => navigate(-1)}
-            aria-label="Volver"
+            aria-label="Back"
             className="-ml-2 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"
           >
             <ChevronLeft className="w-5 h-5" />

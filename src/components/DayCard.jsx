@@ -24,7 +24,7 @@ const SKILL_LABEL = {
   mock: 'Mock',
   diagnostic: 'Mock',
   review: 'Review',
-  rest: 'Descanso',
+  rest: 'Rest',
 };
 
 const PHASE_BG = {
@@ -45,7 +45,7 @@ export default function DayCard({ day, onStart }) {
       <div className={cn('px-4 py-3 flex items-center justify-between', PHASE_BG[day.phase])}>
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-700">
-            {day.phaseLabel} · día {day.dayNumber} de 45
+            {day.phaseLabel} · day {day.dayNumber} of 45
           </p>
           <h3 className="text-base font-semibold text-slate-900 mt-0.5">{day.title}</h3>
         </div>
@@ -61,7 +61,7 @@ export default function DayCard({ day, onStart }) {
             <div key={b.id} className="flex items-center gap-3 px-2 py-2.5">
               <button
                 onClick={() => setBlockDone(day.date, b.id, !b.done)}
-                aria-label={b.done ? 'Marcar como pendiente' : 'Marcar como hecho'}
+                aria-label={b.done ? 'Mark as pending' : 'Mark as done'}
                 className={cn(
                   'shrink-0 w-7 h-7 rounded-full border flex items-center justify-center transition',
                   b.done
@@ -105,7 +105,7 @@ export default function DayCard({ day, onStart }) {
                   onClick={() => onStart?.(route, b)}
                   className="text-xs font-medium text-accent hover:underline shrink-0"
                 >
-                  Iniciar
+                  Start
                 </button>
               ) : null}
             </div>
@@ -113,7 +113,7 @@ export default function DayCard({ day, onStart }) {
         })}
       </div>
       <div className="px-4 py-2 bg-slate-50 dark:bg-slate-900/60 text-xs text-slate-500 dark:text-slate-400">
-        Progreso: {completed} de {total} bloques
+        Progress: {completed} of {total} blocks
       </div>
     </section>
   );

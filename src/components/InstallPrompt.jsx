@@ -47,16 +47,16 @@ export default function InstallPrompt() {
     <div className="fixed inset-x-0 bottom-20 z-50 px-4 animate-slide-up">
       <div className="max-w-xl mx-auto card p-3 flex items-start gap-3 shadow-lg">
         <div className="flex-1 text-xs text-slate-700 dark:text-slate-200">
-          <p className="font-semibold mb-1">Instalá IELTS 7.5 en tu home screen</p>
+          <p className="font-semibold mb-1">Install IELTS 7.5 on your home screen</p>
           <p className="text-slate-500 dark:text-slate-400 leading-snug">
-            En Safari, tocá <Share className="inline w-3.5 h-3.5 mx-0.5" /> Compartir y luego{' '}
-            <Plus className="inline w-3.5 h-3.5 mx-0.5" /> Agregar al inicio.
+            In Safari, tap <Share className="inline w-3.5 h-3.5 mx-0.5" /> Share and then{' '}
+            <Plus className="inline w-3.5 h-3.5 mx-0.5" /> Add to Home Screen.
           </p>
         </div>
         <button
           onClick={dismiss}
           className="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"
-          aria-label="Cerrar"
+          aria-label="Close"
         >
           <X className="w-4 h-4" />
         </button>

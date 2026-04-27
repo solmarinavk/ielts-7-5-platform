@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { format, parseISO } from 'date-fns';
-import { es } from 'date-fns/locale';
 import { useAllPlanDays } from '../hooks/useDailyPlan.js';
 import TopBar from '../components/TopBar.jsx';
 import DayCard from '../components/DayCard.jsx';
@@ -17,10 +16,10 @@ const PHASE_BG = {
 };
 
 const PHASES = [
-  { id: 'diagnostic', label: 'Diagnóstico', range: '1–4' },
-  { id: 'build', label: 'Construcción', range: '5–20' },
-  { id: 'mocks', label: 'Simulacros', range: '21–35' },
-  { id: 'refine', label: 'Refinamiento', range: '36–42' },
+  { id: 'diagnostic', label: 'Diagnostic', range: '1–4' },
+  { id: 'build', label: 'Build', range: '5–20' },
+  { id: 'mocks', label: 'Mock tests', range: '21–35' },
+  { id: 'refine', label: 'Refinement', range: '36–42' },
   { id: 'taper', label: 'Taper', range: '43–45' },
 ];
 
@@ -32,8 +31,8 @@ export default function Plan() {
   if (!days) {
     return (
       <>
-        <TopBar title="Plan 45 días" back />
-        <main className="max-w-xl mx-auto px-4 py-6">Cargando…</main>
+        <TopBar title="45-day plan" back />
+        <main className="max-w-xl mx-auto px-4 py-6">Loading…</main>
       </>
     );
   }
@@ -41,13 +40,13 @@ export default function Plan() {
   if (days.length === 0) {
     return (
       <>
-        <TopBar title="Plan 45 días" back />
+        <TopBar title="45-day plan" back />
         <main className="max-w-xl mx-auto px-4 py-6 space-y-3">
           <p className="text-sm text-slate-500">
-            Aún no hay plan generado. Configurá la fecha del examen.
+            No plan generated yet. Set your exam date first.
           </p>
           <button className="btn-primary" onClick={() => navigate('/settings')}>
-            Ir a Settings
+            Go to Settings
           </button>
         </main>
       </>
@@ -59,7 +58,7 @@ export default function Plan() {
 
   return (
     <>
-      <TopBar title="Plan 45 días" back />
+      <TopBar title="45-day plan" back />
       <main className="max-w-xl mx-auto px-4 pb-28 pt-3 space-y-4 animate-fade-in">
         <Legend />
         <section className="card p-3">
@@ -72,7 +71,7 @@ export default function Plan() {
                 <button
                   key={d.date}
                   onClick={() => setSelectedDate(d.date === selectedDate ? null : d.date)}
-                  title={`Día ${d.dayNumber} · ${format(parseISO(d.date), 'd MMM', { locale: es })}`}
+                  title={`Day ${d.dayNumber} · ${format(parseISO(d.date), 'MMM d')}`}
                   className={cn(
                     'aspect-square rounded-lg flex flex-col items-center justify-center text-[10px] font-medium border transition active:scale-[0.97]',
                     PHASE_BG[d.phase],
@@ -84,7 +83,7 @@ export default function Plan() {
                 >
                   <span className="font-mono font-semibold">{d.dayNumber}</span>
                   <span className="text-[9px] opacity-70">
-                    {format(parseISO(d.date), 'd/M')}
+                    {format(parseISO(d.date), 'M/d')}
                   </span>
                 </button>
               );
@@ -100,7 +99,7 @@ export default function Plan() {
 function Legend() {
   return (
     <section className="card p-3">
-      <p className="label mb-2">Fases</p>
+      <p className="label mb-2">Phases</p>
       <ul className="grid grid-cols-2 gap-1.5">
         {PHASES.map((p) => (
           <li key={p.id} className="flex items-center gap-2 text-xs">

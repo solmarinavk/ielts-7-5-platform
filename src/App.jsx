@@ -17,9 +17,9 @@ export default function App() {
         <Route path="/more" element={<More />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/vocab" element={<Placeholder title="Vocabulario" sprint="Sprint 2" />} />
+        <Route path="/vocab" element={<Placeholder title="Vocab" sprint="Sprint 2" />} />
         <Route path="/mocks" element={<Placeholder title="Mock tests" sprint="Sprint 2" />} />
-        <Route path="/mocks/:id" element={<Placeholder title="Detalle mock" sprint="Sprint 2" />} />
+        <Route path="/mocks/:id" element={<Placeholder title="Mock details" sprint="Sprint 2" />} />
         <Route path="/errors" element={<Placeholder title="Error log" sprint="Sprint 2" />} />
         <Route path="/writing" element={<Placeholder title="Writing" sprint="Sprint 3" />} />
         <Route path="/speaking" element={<Placeholder title="Speaking" sprint="Sprint 3" />} />

@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import { format, parseISO } from 'date-fns';
-import { es } from 'date-fns/locale';
 import { useSettings } from '../hooks/useSettings.js';
 import { useDailyPlan } from '../hooks/useDailyPlan.js';
 import { daysUntil, todayKey } from '../lib/plan-generator.js';
@@ -13,9 +12,9 @@ import { Settings as SettingsIcon, Calendar, AlertCircle } from 'lucide-react';
 
 function greet() {
   const h = new Date().getHours();
-  if (h < 12) return 'Buenos días';
-  if (h < 19) return 'Buenas tardes';
-  return 'Buenas noches';
+  if (h < 12) return 'Good morning';
+  if (h < 19) return 'Good afternoon';
+  return 'Good evening';
 }
 
 export default function Home() {
@@ -29,12 +28,12 @@ export default function Home() {
 
   const examDate = settings?.examDate ?? null;
   const remaining = daysUntil(examDate);
-  const dateLabel = format(parseISO(todayKey()), "EEEE d 'de' MMMM", { locale: es });
+  const dateLabel = format(parseISO(todayKey()), 'EEEE, MMMM d');
 
   return (
     <>
       <TopBar
-        title="Hoy"
+        title="Today"
         right={
           <button
             onClick={() => navigate('/settings')}
@@ -58,7 +57,7 @@ export default function Home() {
             {remaining !== null ? (
               <span className="chip bg-accent/10 text-accent">
                 <Calendar className="w-3 h-3" />
-                {remaining >= 0 ? `${remaining}d al examen` : 'Examen pasado'}
+                {remaining >= 0 ? `${remaining}d to exam` : 'Exam passed'}
               </span>
             ) : null}
           </div>
@@ -68,15 +67,15 @@ export default function Home() {
           <div className="card p-4 flex items-start gap-3 border-warning/30 bg-warning/5">
             <AlertCircle className="w-5 h-5 text-warning shrink-0 mt-0.5" />
             <div className="flex-1">
-              <p className="text-sm font-medium">Configurá tu fecha de examen</p>
+              <p className="text-sm font-medium">Set your exam date</p>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                Necesito la fecha para generar tu plan de 45 días.
+                I need your exam date to generate your 45-day plan.
               </p>
               <button
                 onClick={() => navigate('/settings')}
                 className="btn-primary mt-3 text-xs"
               >
-                Ir a Settings
+                Go to Settings
               </button>
             </div>
           </div>
@@ -104,12 +103,12 @@ export default function Home() {
 function OutOfPlanCard({ remaining }) {
   const message =
     remaining === null
-      ? 'Sin plan disponible para hoy.'
+      ? 'No plan available for today.'
       : remaining > 45
-        ? `Faltan ${remaining} días para el examen. El plan arranca a 45 días.`
+        ? `${remaining} days until your exam. The plan starts 45 days out.`
         : remaining < 0
-          ? 'El examen ya pasó. Resetea la fecha en Settings.'
-          : 'No hay plan generado para hoy. Volvé a generar el plan en Settings.';
+          ? 'Your exam date has passed. Reset it in Settings.'
+          : 'No plan generated for today. Re-generate the plan in Settings.';
   return (
     <div className="card p-4 text-sm text-slate-600 dark:text-slate-300">{message}</div>
   );
@@ -118,9 +117,9 @@ function OutOfPlanCard({ remaining }) {
 function QuickStats() {
   return (
     <section className="grid grid-cols-3 gap-3">
-      <StatTile label="Vocab hoy" value="—" hint="próx. sprint" />
-      <StatTile label="Errores abiertos" value="—" hint="próx. sprint" />
-      <StatTile label="Próx. mock" value="—" hint="próx. sprint" />
+      <StatTile label="Today's vocab" value="—" hint="coming soon" />
+      <StatTile label="Open errors" value="—" hint="coming soon" />
+      <StatTile label="Next mock" value="—" hint="coming soon" />
     </section>
   );
 }

@@ -35,9 +35,9 @@ function buildBlocksForDay(dayNumber) {
     const primarySkill = rotateSkillForDay(dayNumber);
     const tpl = template.days.default_build;
     const blocks = cloneBlocks(tpl.blocks).map((b) =>
-      b.skill === 'primary' ? { ...b, skill: primarySkill, label: `${capitalize(primarySkill)}: técnica + 1 set practicado` } : b,
+      b.skill === 'primary' ? { ...b, skill: primarySkill, label: `${capitalize(primarySkill)}: technique + 1 practised set` } : b,
     );
-    return { title: `Construcción · foco ${capitalize(primarySkill)}`, blocks };
+    return { title: `Build · ${capitalize(primarySkill)} focus`, blocks };
   }
 
   if (phase.id === 'mocks') {
@@ -45,17 +45,17 @@ function buildBlocksForDay(dayNumber) {
     const tpl = isMockDay ? template.days.default_mocks_mockDay : template.days.default_mocks_recoveryDay;
     const primarySkill = rotateSkillForDay(dayNumber);
     const blocks = cloneBlocks(tpl.blocks).map((b) =>
-      b.skill === 'primary' ? { ...b, skill: primarySkill, label: `Práctica focalizada: ${capitalize(primarySkill)}` } : b,
+      b.skill === 'primary' ? { ...b, skill: primarySkill, label: `Focused practice: ${capitalize(primarySkill)}` } : b,
     );
-    return { title: isMockDay ? 'Mock completo' : `Recovery · foco ${capitalize(primarySkill)}`, blocks };
+    return { title: isMockDay ? 'Full mock' : `Recovery · ${capitalize(primarySkill)} focus`, blocks };
   }
 
   if (phase.id === 'refine') {
     const blocks = cloneBlocks(template.days.default_refine.blocks);
     if (REFINE_MOCK_DAYS.has(dayNumber)) {
-      blocks.unshift({ skill: 'mock', label: 'Mock completo de refinamiento', minutes: 170, intensity: 'heavy' });
+      blocks.unshift({ skill: 'mock', label: 'Full refinement mock', minutes: 170, intensity: 'heavy' });
     }
-    return { title: REFINE_MOCK_DAYS.has(dayNumber) ? 'Refinamiento + mock' : 'Refinamiento', blocks };
+    return { title: REFINE_MOCK_DAYS.has(dayNumber) ? 'Refinement + mock' : 'Refinement', blocks };
   }
 
   // Diagnostic and taper days are all explicit; this is a fallback.

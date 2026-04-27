@@ -3,11 +3,11 @@ import { Home, CalendarDays, BookOpenCheck, ListChecks, Menu } from 'lucide-reac
 import { cn } from '../lib/cn.js';
 
 const items = [
-  { to: '/', label: 'Hoy', icon: Home, end: true },
+  { to: '/', label: 'Today', icon: Home, end: true },
   { to: '/plan', label: 'Plan', icon: CalendarDays },
   { to: '/vocab', label: 'Vocab', icon: BookOpenCheck },
   { to: '/mocks', label: 'Mocks', icon: ListChecks },
-  { to: '/more', label: 'Más', icon: Menu },
+  { to: '/more', label: 'More', icon: Menu },
 ];
 
 export default function BottomNav() {

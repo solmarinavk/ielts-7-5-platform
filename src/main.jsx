@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import { ensureSettings } from './hooks/useSettings.js';
-import { getStreak } from './lib/db.js';
+import { getStreak, updateSettings } from './lib/db.js';
+import { generateAndPersistPlan } from './lib/plan-generator.js';
 import './styles/globals.css';
+
+const PLAN_LANG_VERSION = 2;
 
 async function bootstrap() {
   // Idempotent: creates default rows on first launch.
   await Promise.all([ensureSettings(), getStreak()]);
+
+  // Silent migration: if an existing plan was generated under the old Spanish
+  // template, re-materialise it in English. generateAndPersistPlan preserves
+  // per-block completion state, so user progress is not lost.
+  const settings = await ensureSettings();
+  if (settings.examDate && (settings.planLangVersion ?? 1) < PLAN_LANG_VERSION) {
+    await generateAndPersistPlan(settings.examDate);
+    await updateSettings({ planLangVersion: PLAN_LANG_VERSION });
+  }
 
   // Honor stored theme preference before first paint.
   try {

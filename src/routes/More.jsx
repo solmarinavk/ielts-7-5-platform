@@ -14,17 +14,17 @@ import TopBar from '../components/TopBar.jsx';
 const ITEMS = [
   { to: '/writing', label: 'Writing', desc: 'Samples + self-assessment', icon: PenSquare },
   { to: '/speaking', label: 'Speaking', desc: 'Recorder + cue cards', icon: Mic },
-  { to: '/errors', label: 'Errores', desc: 'Error log auto-generado', icon: AlertTriangle },
-  { to: '/tracking', label: 'Tracking', desc: 'Stats + predictor de banda', icon: LineChart },
-  { to: '/resources', label: 'Recursos', desc: 'Catálogo curado de mocks, samples, vocab', icon: Library },
-  { to: '/export', label: 'Export', desc: 'Paquete Markdown para coach', icon: Download },
-  { to: '/settings', label: 'Settings', desc: 'Examen, theme, reset', icon: SettingsIcon },
+  { to: '/errors', label: 'Errors', desc: 'Auto-generated error log', icon: AlertTriangle },
+  { to: '/tracking', label: 'Tracking', desc: 'Stats + band predictor', icon: LineChart },
+  { to: '/resources', label: 'Resources', desc: 'Curated mocks, samples, vocab', icon: Library },
+  { to: '/export', label: 'Export', desc: 'Markdown package for coach', icon: Download },
+  { to: '/settings', label: 'Settings', desc: 'Exam date, theme, reset', icon: SettingsIcon },
 ];
 
 export default function More() {
   return (
     <>
-      <TopBar title="Más" />
+      <TopBar title="More" />
       <main className="max-w-xl mx-auto px-4 pb-28 pt-3 space-y-2 animate-fade-in">
         {ITEMS.map(({ to, label, desc, icon: Icon }) => (
           <Link

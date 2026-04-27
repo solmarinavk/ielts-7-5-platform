@@ -8,12 +8,12 @@ const ICONS = { FileCheck, PenSquare, Mic, Headphones, BookOpenCheck, MapPin };
 export default function Resources() {
   return (
     <>
-      <TopBar title="Recursos" back />
+      <TopBar title="Resources" back />
       <main className="max-w-xl mx-auto px-4 pb-28 pt-3 space-y-5 animate-fade-in">
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Catálogo curado de recursos IELTS. Los marcados con
+          Curated IELTS resources. Items marked
           <span className="chip bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200 mx-1">free</span>
-          son gratuitos.
+          have no paywall.
         </p>
         {RESOURCE_CATEGORIES.map((cat) => (
           <CategorySection key={cat.id} category={cat} />
@@ -65,8 +65,8 @@ function ResourceCard({ resource }) {
             {resource.urlVerified === false ? (
               <span
                 className="chip bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200"
-                title="URL pendiente de verificación"
-              >verificá link</span>
+                title="URL pending verification"
+              >verify link</span>
             ) : null}
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400 leading-snug">{resource.description}</p>

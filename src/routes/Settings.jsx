@@ -39,7 +39,7 @@ export default function Settings() {
     return (
       <>
         <TopBar title="Settings" back />
-        <main className="max-w-xl mx-auto px-4 py-6">Cargando…</main>
+        <main className="max-w-xl mx-auto px-4 py-6">Loading…</main>
       </>
     );
   }
@@ -93,7 +93,7 @@ export default function Settings() {
   }
 
   async function resetEverything() {
-    const ok = confirm('Esto borra TODO (settings, plan, vocab, mocks, writing, speaking). ¿Seguir?');
+    const ok = confirm('This will erase EVERYTHING (settings, plan, vocab, mocks, writing, speaking). Continue?');
     if (!ok) return;
     await clearAllData();
     navigate('/', { replace: true });
@@ -105,8 +105,8 @@ export default function Settings() {
       <TopBar title="Settings" back />
       <main className="max-w-xl mx-auto px-4 pb-28 pt-3 space-y-4 animate-fade-in">
         <section className="card p-4 space-y-3">
-          <h2 className="text-sm font-semibold">Perfil</h2>
-          <Field label="Nombre">
+          <h2 className="text-sm font-semibold">Profile</h2>
+          <Field label="Name">
             <input
               className="input"
               value={form.name}
@@ -116,8 +116,8 @@ export default function Settings() {
         </section>
 
         <section className="card p-4 space-y-3">
-          <h2 className="text-sm font-semibold">Examen</h2>
-          <Field label="Fecha del examen">
+          <h2 className="text-sm font-semibold">Exam</h2>
+          <Field label="Exam date">
             <input
               type="date"
               className="input"
@@ -125,7 +125,7 @@ export default function Settings() {
               onChange={(e) => setField('examDate', e.target.value)}
             />
           </Field>
-          <Field label="Banda objetivo overall">
+          <Field label="Target overall band">
             <select
               className="input"
               value={form.targetBand}
@@ -136,7 +136,7 @@ export default function Settings() {
               ))}
             </select>
           </Field>
-          <Field label="Banda baseline (estimada)">
+          <Field label="Baseline band (estimate)">
             <select
               className="input"
               value={form.baselineBand}
@@ -150,7 +150,7 @@ export default function Settings() {
         </section>
 
         <section className="card p-4 space-y-3">
-          <h2 className="text-sm font-semibold">Targets por sección</h2>
+          <h2 className="text-sm font-semibold">Section targets</h2>
           <div className="grid grid-cols-2 gap-3">
             {SECTIONS.map((s) => (
               <Field key={s} label={s.charAt(0).toUpperCase() + s.slice(1)}>
@@ -169,35 +169,35 @@ export default function Settings() {
         </section>
 
         <section className="card p-4 space-y-3">
-          <h2 className="text-sm font-semibold">Apariencia</h2>
+          <h2 className="text-sm font-semibold">Appearance</h2>
           <div className="grid grid-cols-3 gap-2">
-            <ThemeBtn icon={Sun} label="Claro" active={form.theme === 'light'} onClick={() => applyTheme('light')} />
-            <ThemeBtn icon={Moon} label="Oscuro" active={form.theme === 'dark'} onClick={() => applyTheme('dark')} />
-            <ThemeBtn icon={Monitor} label="Sistema" active={form.theme === 'system'} onClick={() => applyTheme('system')} />
+            <ThemeBtn icon={Sun} label="Light" active={form.theme === 'light'} onClick={() => applyTheme('light')} />
+            <ThemeBtn icon={Moon} label="Dark" active={form.theme === 'dark'} onClick={() => applyTheme('dark')} />
+            <ThemeBtn icon={Monitor} label="System" active={form.theme === 'system'} onClick={() => applyTheme('system')} />
           </div>
         </section>
 
         <div className="flex gap-2">
           <button onClick={save} disabled={generating} className="btn-primary flex-1">
             <Save className="w-4 h-4" />
-            {generating ? 'Generando plan…' : savedFlash ? 'Guardado' : 'Guardar y generar plan'}
+            {generating ? 'Generating plan…' : savedFlash ? 'Saved' : 'Save and generate plan'}
           </button>
         </div>
 
         <section className="card p-4 space-y-3">
           <h2 className="text-sm font-semibold">Plan</h2>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            El plan se materializa para los 45 días previos a la fecha del examen. Re-generar conserva el progreso de bloques completados.
+            The plan covers the 45 days before your exam date. Re-generating keeps your completed-block progress.
           </p>
           <button onClick={regeneratePlan} disabled={generating} className="btn-outline w-full">
-            <RefreshCw className="w-4 h-4" /> Re-generar plan
+            <RefreshCw className="w-4 h-4" /> Re-generate plan
           </button>
         </section>
 
         <section className="card p-4 border-danger/40 space-y-3">
-          <h2 className="text-sm font-semibold text-danger">Zona peligrosa</h2>
+          <h2 className="text-sm font-semibold text-danger">Danger zone</h2>
           <button onClick={resetEverything} className="btn-outline w-full text-danger border-danger/50">
-            <Trash2 className="w-4 h-4" /> Borrar todos los datos locales
+            <Trash2 className="w-4 h-4" /> Erase all local data
           </button>
         </section>
       </main>

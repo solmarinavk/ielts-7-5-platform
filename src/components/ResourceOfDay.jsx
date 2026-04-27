@@ -14,7 +14,7 @@ export default function ResourceOfDay({ phase, date }) {
         </span>
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2 mb-0.5">
-            <h2 className="text-sm font-semibold">Recurso del día</h2>
+            <h2 className="text-sm font-semibold">Resource of the day</h2>
             {resource.free ? (
               <span className="chip bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">free</span>
             ) : null}
@@ -32,7 +32,7 @@ export default function ResourceOfDay({ phase, date }) {
             to="/resources"
             className="text-[11px] font-medium text-slate-500 dark:text-slate-400 hover:text-accent inline-block mt-2"
           >
-            Ver todos los recursos →
+            Browse all resources →
           </Link>
         </div>
       </div>

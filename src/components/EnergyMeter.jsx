@@ -4,11 +4,11 @@ import { todayKey } from '../lib/plan-generator.js';
 import { cn } from '../lib/cn.js';
 
 const LEVELS = [
-  { value: 1, emoji: '😩', label: 'Agotada' },
-  { value: 2, emoji: '😕', label: 'Baja' },
-  { value: 3, emoji: '😐', label: 'Normal' },
-  { value: 4, emoji: '🙂', label: 'Buena' },
-  { value: 5, emoji: '🔥', label: 'Pico' },
+  { value: 1, emoji: '😩', label: 'Drained' },
+  { value: 2, emoji: '😕', label: 'Low' },
+  { value: 3, emoji: '😐', label: 'Average' },
+  { value: 4, emoji: '🙂', label: 'Good' },
+  { value: 5, emoji: '🔥', label: 'Peak' },
 ];
 
 export default function EnergyMeter() {
@@ -41,7 +41,7 @@ export default function EnergyMeter() {
     <section className="card p-4">
       <div className="flex items-baseline justify-between mb-2">
         <h2 className="text-sm font-semibold">Energy check</h2>
-        {today ? <span className="label">Registrado hoy</span> : <span className="label">¿Cómo te sentís?</span>}
+        {today ? <span className="label">Logged today</span> : <span className="label">How are you feeling today?</span>}
       </div>
       <div className="grid grid-cols-5 gap-1.5">
         {LEVELS.map((l) => (
@@ -63,7 +63,7 @@ export default function EnergyMeter() {
       </div>
       {lowEnergyHint ? (
         <p className="mt-3 text-xs text-warning">
-          Energía baja. Sustituí los bloques heavy por revisión de vocab y un Speaking Part 1 corto.
+          Low energy today. Swap heavy blocks for a vocab review and a short Speaking Part 1.
         </p>
       ) : null}
     </section>
