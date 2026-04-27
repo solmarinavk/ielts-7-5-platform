@@ -1,0 +1,227 @@
+[
+  {
+    "word": "surge",
+    "partOfSpeech": "verb",
+    "definition": "to increase suddenly and by a large amount",
+    "exampleIELTS": "Online sales surged from 12% in 2010 to 38% in 2020, overtaking in-store purchases.",
+    "collocations": ["surge in demand", "surge dramatically", "prices surged"],
+    "level": 2,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "plummet",
+    "partOfSpeech": "verb",
+    "definition": "to fall or drop straight down at high speed",
+    "exampleIELTS": "Coal consumption plummeted from 60 million tonnes to barely 15 million over the period shown.",
+    "collocations": ["plummet sharply", "share prices plummeted", "plummet to a low"],
+    "level": 3,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "soar",
+    "partOfSpeech": "verb",
+    "definition": "to rise quickly to a high level",
+    "exampleIELTS": "The number of international tourists soared, reaching a peak of 2.1 million in 2018.",
+    "collocations": ["soar to a peak", "costs soared", "demand soared"],
+    "level": 2,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "plateau",
+    "partOfSpeech": "verb",
+    "definition": "to stop rising or falling and remain at a steady level",
+    "exampleIELTS": "After a sharp rise in the first decade, female participation plateaued at around 65%.",
+    "collocations": ["plateau at a level", "growth plateaued", "figures plateaued"],
+    "level": 3,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "fluctuate",
+    "partOfSpeech": "verb",
+    "definition": "to change frequently in size, amount, or quality",
+    "exampleIELTS": "Unemployment fluctuated between 4% and 7% throughout the period, with no clear upward or downward trend.",
+    "collocations": ["fluctuate between", "fluctuate wildly", "prices fluctuated"],
+    "level": 2,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "stabilise",
+    "partOfSpeech": "verb",
+    "definition": "to become steady and stop changing",
+    "exampleIELTS": "Carbon emissions stabilised at approximately 30 megatonnes from 2015 onwards.",
+    "collocations": ["stabilise at a level", "figures stabilised", "stabilise after a fall"],
+    "level": 2,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "peak",
+    "partOfSpeech": "verb",
+    "definition": "to reach the highest level before falling",
+    "exampleIELTS": "Energy consumption peaked at 850 terawatt-hours in 2008 before declining steadily thereafter.",
+    "collocations": ["peak at", "reach a peak", "peak in [year]"],
+    "level": 1,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "dip",
+    "partOfSpeech": "noun",
+    "definition": "a small, temporary fall in a level or amount",
+    "exampleIELTS": "Despite a brief dip in 2015, overall production rose throughout the period.",
+    "collocations": ["a slight dip", "a brief dip", "a dip in sales"],
+    "level": 2,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "climb",
+    "partOfSpeech": "verb",
+    "definition": "to rise gradually over time",
+    "exampleIELTS": "Tuition fees climbed steadily from £3,000 in 2005 to over £9,000 by 2020.",
+    "collocations": ["climb steadily", "climb to a peak", "figures climbed"],
+    "level": 1,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "dwindle",
+    "partOfSpeech": "verb",
+    "definition": "to gradually become smaller or weaker",
+    "exampleIELTS": "Newspaper readership dwindled over the two decades, falling from 75% to under 30%.",
+    "collocations": ["dwindle gradually", "numbers dwindled", "dwindle to almost nothing"],
+    "level": 3,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "substantially",
+    "partOfSpeech": "adverb",
+    "definition": "to a large extent or degree",
+    "exampleIELTS": "The proportion of households owning a smartphone rose substantially, from 23% to 91% over the period.",
+    "collocations": ["increase substantially", "differ substantially", "substantially higher"],
+    "level": 2,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "marginally",
+    "partOfSpeech": "adverb",
+    "definition": "by a very small amount",
+    "exampleIELTS": "Public transport usage rose only marginally, by about two percentage points across the decade.",
+    "collocations": ["increase marginally", "differ marginally", "marginally higher"],
+    "level": 2,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "comparatively",
+    "partOfSpeech": "adverb",
+    "definition": "as judged in comparison with something else",
+    "exampleIELTS": "Spending on healthcare was comparatively high, almost double that of any other category.",
+    "collocations": ["comparatively high", "comparatively few", "comparatively small"],
+    "level": 2,
+    "tags": ["task1", "comparison"]
+  },
+  {
+    "word": "proportionally",
+    "partOfSpeech": "adverb",
+    "definition": "in a way that corresponds in size or amount to something else",
+    "exampleIELTS": "Although Japan's population is smaller, it consumed proportionally more energy per capita than India.",
+    "collocations": ["proportionally larger", "rise proportionally", "proportionally fewer"],
+    "level": 2,
+    "tags": ["task1", "comparison"]
+  },
+  {
+    "word": "dramatically",
+    "partOfSpeech": "adverb",
+    "definition": "by a sudden and very large amount",
+    "exampleIELTS": "Renewable energy use increased dramatically, more than tripling between 2000 and 2020.",
+    "collocations": ["fall dramatically", "rise dramatically", "change dramatically"],
+    "level": 1,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "steadily",
+    "partOfSpeech": "adverb",
+    "definition": "at a regular and constant rate",
+    "exampleIELTS": "Car ownership rose steadily across the period, gaining around two percentage points each year.",
+    "collocations": ["increase steadily", "decline steadily", "grow steadily"],
+    "level": 1,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "abruptly",
+    "partOfSpeech": "adverb",
+    "definition": "suddenly and unexpectedly",
+    "exampleIELTS": "The downward trend ended abruptly in 2018, when figures recovered to pre-recession levels.",
+    "collocations": ["fall abruptly", "end abruptly", "change abruptly"],
+    "level": 3,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "trough",
+    "partOfSpeech": "noun",
+    "definition": "the lowest point in a fluctuating series of values",
+    "exampleIELTS": "Sales reached a trough of just 4,000 units in 2012 before recovering throughout the rest of the decade.",
+    "collocations": ["reach a trough", "a trough of", "between peaks and troughs"],
+    "level": 3,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "proportion",
+    "partOfSpeech": "noun",
+    "definition": "a part or share of a whole",
+    "exampleIELTS": "A growing proportion of commuters chose cycling over driving during the period shown.",
+    "collocations": ["a large proportion of", "a small proportion", "the proportion rose"],
+    "level": 1,
+    "tags": ["task1", "quantity"]
+  },
+  {
+    "word": "discrepancy",
+    "partOfSpeech": "noun",
+    "definition": "a noticeable difference between two things that should match",
+    "exampleIELTS": "There is a marked discrepancy between male and female enrolment in engineering, with men outnumbering women three to one.",
+    "collocations": ["a marked discrepancy", "a discrepancy between", "a wide discrepancy"],
+    "level": 3,
+    "tags": ["task1", "comparison"]
+  },
+  {
+    "word": "trajectory",
+    "partOfSpeech": "noun",
+    "definition": "the overall pattern or path of change over time",
+    "exampleIELTS": "The two countries followed a similar trajectory, with both seeing rapid urban growth after 2005.",
+    "collocations": ["upward trajectory", "follow a trajectory", "similar trajectory"],
+    "level": 3,
+    "tags": ["task1", "trend"]
+  },
+  {
+    "word": "substantial",
+    "partOfSpeech": "adjective",
+    "definition": "of considerable importance, size, or worth",
+    "exampleIELTS": "The chart shows a substantial increase in renewable energy use between 2010 and 2020.",
+    "collocations": ["substantial increase", "substantial proportion", "substantial difference"],
+    "level": 2,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "negligible",
+    "partOfSpeech": "adjective",
+    "definition": "so small or unimportant that it can be ignored",
+    "exampleIELTS": "The change in coal use was negligible, varying by less than one percent across the entire period.",
+    "collocations": ["negligible difference", "negligible impact", "negligible change"],
+    "level": 3,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "noticeable",
+    "partOfSpeech": "adjective",
+    "definition": "easy to see or recognise",
+    "exampleIELTS": "There was a noticeable shift towards online shopping, particularly among younger consumers.",
+    "collocations": ["a noticeable shift", "a noticeable increase", "noticeably higher"],
+    "level": 2,
+    "tags": ["task1", "modifier"]
+  },
+  {
+    "word": "consecutive",
+    "partOfSpeech": "adjective",
+    "definition": "following one after another in unbroken sequence",
+    "exampleIELTS": "Emissions fell for three consecutive years before rising again in the final period.",
+    "collocations": ["consecutive years", "for X consecutive months", "consecutive periods"],
+    "level": 2,
+    "tags": ["task1", "time"]
+  }
+]
