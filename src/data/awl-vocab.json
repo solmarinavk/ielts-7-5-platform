@@ -673,5 +673,230 @@
     "collocations": ["to sum up, ...", "to sum up briefly"],
     "level": 1,
     "tags": ["linker", "summary"]
+  },
+  {
+    "word": "constitute",
+    "partOfSpeech": "verb",
+    "definition": "to be or form the parts that together make up something",
+    "exampleIELTS": "Women constitute almost 60% of higher education graduates in most OECD countries.",
+    "collocations": ["constitute a majority", "constitute a significant proportion", "constitute the bulk of"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "comprise",
+    "partOfSpeech": "verb",
+    "definition": "to consist of; to be made up of",
+    "exampleIELTS": "The committee comprises representatives from all twelve member states.",
+    "collocations": ["comprise the majority", "comprise of (informal)", "primarily comprises"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "encompass",
+    "partOfSpeech": "verb",
+    "definition": "to include a wide range of related things",
+    "exampleIELTS": "Sustainable development encompasses environmental, economic and social dimensions, all of which must be balanced.",
+    "collocations": ["encompass a range of", "broadly encompass", "encompass aspects of"],
+    "level": 3,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "underscore",
+    "partOfSpeech": "verb",
+    "definition": "to emphasise the importance of something",
+    "exampleIELTS": "The recent pandemic has underscored the need for resilient public health systems.",
+    "collocations": ["underscore the importance", "underscore the need", "starkly underscore"],
+    "level": 3,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "yield",
+    "partOfSpeech": "verb",
+    "definition": "to produce a result, profit, or finding",
+    "exampleIELTS": "Investment in early childhood education yields long-term returns far exceeding its initial cost.",
+    "collocations": ["yield results", "yield insights", "yield benefits"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "reinforce",
+    "partOfSpeech": "verb",
+    "definition": "to strengthen or further support an idea, system or feeling",
+    "exampleIELTS": "Repeated exposure to advertising reinforces consumer brand loyalty.",
+    "collocations": ["reinforce the idea", "reinforce stereotypes", "mutually reinforce"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "corroborate",
+    "partOfSpeech": "verb",
+    "definition": "to confirm or support a finding with additional evidence",
+    "exampleIELTS": "Three independent studies have corroborated the link between air pollution and reduced cognitive function.",
+    "collocations": ["corroborate the findings", "independently corroborate", "evidence corroborates"],
+    "level": 3,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "supplement",
+    "partOfSpeech": "verb",
+    "definition": "to add something to enhance or complete it",
+    "exampleIELTS": "Many universities now supplement traditional lectures with interactive online modules.",
+    "collocations": ["supplement income", "supplement the curriculum", "supplement with evidence"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "emerge",
+    "partOfSpeech": "verb",
+    "definition": "to become apparent or come into existence",
+    "exampleIELTS": "A consensus has begun to emerge among economists regarding the long-term impact of automation on wages.",
+    "collocations": ["emerge as a leader", "a pattern emerges", "emerge from data"],
+    "level": 1,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "evolve",
+    "partOfSpeech": "verb",
+    "definition": "to develop gradually, especially in response to changing conditions",
+    "exampleIELTS": "The role of universities has evolved considerably since the rise of online learning platforms.",
+    "collocations": ["evolve over time", "rapidly evolve", "continue to evolve"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "revolutionise",
+    "partOfSpeech": "verb",
+    "definition": "to change something completely and fundamentally",
+    "exampleIELTS": "Mobile banking has revolutionised access to financial services in much of sub-Saharan Africa.",
+    "collocations": ["revolutionise the industry", "completely revolutionise", "revolutionise access"],
+    "level": 2,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "acknowledge",
+    "partOfSpeech": "verb",
+    "definition": "to accept the truth or existence of something",
+    "exampleIELTS": "Even critics acknowledge that public transport investment has reduced inner-city congestion.",
+    "collocations": ["widely acknowledge", "acknowledge the role of", "publicly acknowledge"],
+    "level": 1,
+    "tags": ["academic", "verb"]
+  },
+  {
+    "word": "phenomenon",
+    "partOfSpeech": "noun",
+    "definition": "a situation or fact that is observed to exist, especially one whose cause is being studied",
+    "exampleIELTS": "The phenomenon of language attrition is increasingly common among second-generation immigrants.",
+    "collocations": ["a recent phenomenon", "a global phenomenon", "the phenomenon of"],
+    "level": 2,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "paradigm",
+    "partOfSpeech": "noun",
+    "definition": "a typical pattern or model that defines how something is understood",
+    "exampleIELTS": "The shift from ownership to access is a paradigm shift that has reshaped industries from music to transport.",
+    "collocations": ["a paradigm shift", "the dominant paradigm", "challenge a paradigm"],
+    "level": 3,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "hallmark",
+    "partOfSpeech": "noun",
+    "definition": "a distinctive feature or characteristic of something",
+    "exampleIELTS": "Transparency and accountability are the hallmarks of a healthy democracy.",
+    "collocations": ["the hallmark of", "bear the hallmarks of", "a hallmark feature"],
+    "level": 3,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "catalyst",
+    "partOfSpeech": "noun",
+    "definition": "an event or person that causes a significant change",
+    "exampleIELTS": "The financial crisis acted as a catalyst for reforms in banking regulation worldwide.",
+    "collocations": ["a catalyst for change", "act as a catalyst", "powerful catalyst"],
+    "level": 2,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "cornerstone",
+    "partOfSpeech": "noun",
+    "definition": "the most essential part of something",
+    "exampleIELTS": "Free and impartial journalism remains a cornerstone of any functioning democracy.",
+    "collocations": ["a cornerstone of", "the cornerstone of policy", "lay the cornerstone"],
+    "level": 3,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "pitfall",
+    "partOfSpeech": "noun",
+    "definition": "a hidden or unsuspected difficulty",
+    "exampleIELTS": "One pitfall of self-reported survey data is that respondents tend to overestimate socially desirable behaviours.",
+    "collocations": ["a common pitfall", "avoid the pitfalls", "the pitfalls of"],
+    "level": 2,
+    "tags": ["academic", "noun"]
+  },
+  {
+    "word": "pervasive",
+    "partOfSpeech": "adjective",
+    "definition": "spreading widely throughout an area or group",
+    "exampleIELTS": "Misinformation has become pervasive on social media, posing a serious challenge to public discourse.",
+    "collocations": ["pervasive influence", "increasingly pervasive", "pervasive throughout"],
+    "level": 3,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "inherent",
+    "partOfSpeech": "adjective",
+    "definition": "existing as a permanent and essential characteristic",
+    "exampleIELTS": "There is an inherent tension between economic growth and environmental sustainability.",
+    "collocations": ["inherent risk", "inherent in the system", "inherent contradiction"],
+    "level": 2,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "profound",
+    "partOfSpeech": "adjective",
+    "definition": "very great or intense; far-reaching",
+    "exampleIELTS": "The internet has had a profound impact on how young people form social relationships.",
+    "collocations": ["profound impact", "profound effect", "profound implications"],
+    "level": 2,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "tangible",
+    "partOfSpeech": "adjective",
+    "definition": "clear and concrete enough to be measured or seen",
+    "exampleIELTS": "Investment in cycling infrastructure has produced tangible benefits in air quality and public health.",
+    "collocations": ["tangible benefits", "tangible results", "tangible evidence"],
+    "level": 2,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "nuanced",
+    "partOfSpeech": "adjective",
+    "definition": "marked by subtle distinctions and shades of meaning",
+    "exampleIELTS": "A more nuanced view of immigration recognises both its economic contributions and the pressures it places on services.",
+    "collocations": ["a nuanced view", "more nuanced approach", "highly nuanced"],
+    "level": 3,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "salient",
+    "partOfSpeech": "adjective",
+    "definition": "most noticeable or important",
+    "exampleIELTS": "The most salient feature of the chart is the dramatic decline in newspaper readership after 2010.",
+    "collocations": ["a salient feature", "the most salient point", "salient differences"],
+    "level": 3,
+    "tags": ["academic", "adjective"]
+  },
+  {
+    "word": "unprecedented",
+    "partOfSpeech": "adjective",
+    "definition": "never done or known before",
+    "exampleIELTS": "Remote work was adopted at an unprecedented scale during the pandemic, permanently reshaping office norms.",
+    "collocations": ["unprecedented scale", "unprecedented growth", "an unprecedented level"],
+    "level": 2,
+    "tags": ["academic", "adjective"]
   }
 ]
