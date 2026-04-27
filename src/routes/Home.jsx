@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { format, parseISO } from 'date-fns';
+import { format, parseISO, differenceInCalendarDays } from 'date-fns';
 import { useSettings } from '../hooks/useSettings.js';
 import { useDailyPlan } from '../hooks/useDailyPlan.js';
 import { daysUntil, todayKey } from '../lib/plan-generator.js';
@@ -8,6 +8,8 @@ import StreakBadge from '../components/StreakBadge.jsx';
 import EnergyMeter from '../components/EnergyMeter.jsx';
 import DayCard from '../components/DayCard.jsx';
 import ResourceOfDay from '../components/ResourceOfDay.jsx';
+import TodaysReview from '../components/TodaysReview.jsx';
+import { useHomeStats } from '../hooks/useHomeStats.js';
 import { Settings as SettingsIcon, Calendar, AlertCircle } from 'lucide-react';
 
 function greet() {
@@ -94,6 +96,8 @@ export default function Home() {
 
         {today ? <ResourceOfDay phase={today.phase} date={todayKey()} /> : null}
 
+        <TodaysReview />
+
         <QuickStats />
       </main>
     </>
@@ -115,24 +119,60 @@ function OutOfPlanCard({ remaining }) {
 }
 
 function QuickStats() {
+  const navigate = useNavigate();
+  const stats = useHomeStats();
+
+  const vocab = stats?.vocabDue ?? null;
+  const errs = stats?.openErrors ?? null;
+  const mockHint = (() => {
+    if (!stats) return '…';
+    if (!stats.nextMock) return 'none scheduled';
+    const days = differenceInCalendarDays(parseISO(stats.nextMock.date), new Date());
+    if (days <= 0) return 'today';
+    if (days === 1) return 'tomorrow';
+    return `in ${days}d`;
+  })();
+  const mockValue = stats?.nextMock
+    ? format(parseISO(stats.nextMock.date), 'MMM d')
+    : '—';
+
   return (
     <section className="grid grid-cols-3 gap-3">
-      <StatTile label="Today's vocab" value="—" hint="coming soon" />
-      <StatTile label="Open errors" value="—" hint="coming soon" />
-      <StatTile label="Next mock" value="—" hint="coming soon" />
+      <StatTile
+        label="Today's vocab"
+        value={vocab ?? '—'}
+        hint={vocab === null ? '…' : vocab === 0 ? 'all caught up' : 'cards due'}
+        onClick={() => navigate('/vocab')}
+      />
+      <StatTile
+        label="Open errors"
+        value={errs ?? '—'}
+        hint={errs === null ? '…' : errs === 0 ? 'log clean' : 'in error log'}
+        onClick={() => navigate('/errors')}
+      />
+      <StatTile
+        label="Next mock"
+        value={mockValue}
+        hint={mockHint}
+        onClick={() => navigate('/mocks')}
+      />
     </section>
   );
 }
 
-function StatTile({ label, value, hint }) {
+function StatTile({ label, value, hint, onClick }) {
   return (
-    <div className="card p-3">
+    <button
+      type="button"
+      onClick={onClick}
+      className="card p-3 text-left active:scale-[0.98] transition"
+    >
       <p className="text-[10px] font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
         {label}
       </p>
       <p className="text-lg font-mono font-semibold mt-1">{value}</p>
       <p className="text-[10px] text-slate-400 mt-0.5">{hint}</p>
-    </div>
+    </button>
   );
 }
 
