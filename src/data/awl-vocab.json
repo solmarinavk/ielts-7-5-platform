@@ -223,5 +223,230 @@
     "collocations": ["consecutive years", "for X consecutive months", "consecutive periods"],
     "level": 2,
     "tags": ["task1", "time"]
+  },
+  {
+    "word": "advocate",
+    "partOfSpeech": "verb",
+    "definition": "to publicly recommend or support a particular policy or idea",
+    "exampleIELTS": "While many advocate stricter regulation of social media, others argue that this would infringe on freedom of expression.",
+    "collocations": ["advocate stricter rules", "strongly advocate", "advocate a policy"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "contend",
+    "partOfSpeech": "verb",
+    "definition": "to assert something firmly as a position in argument",
+    "exampleIELTS": "Critics contend that increased automation will displace millions of low-skilled workers within a generation.",
+    "collocations": ["critics contend that", "contend strongly", "contend the opposite"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "attribute",
+    "partOfSpeech": "verb",
+    "definition": "to regard something as caused by a particular factor",
+    "exampleIELTS": "The decline in obesity rates can largely be attributed to public health campaigns and stricter food labelling.",
+    "collocations": ["attribute X to Y", "largely attributed to", "commonly attributed to"],
+    "level": 2,
+    "tags": ["task2", "causation"]
+  },
+  {
+    "word": "exacerbate",
+    "partOfSpeech": "verb",
+    "definition": "to make a problem or bad situation worse",
+    "exampleIELTS": "Banning private vehicles in city centres may exacerbate inequality, as poorer residents often live further from public transport.",
+    "collocations": ["exacerbate the problem", "exacerbate inequality", "exacerbate tensions"],
+    "level": 3,
+    "tags": ["task2", "causation"]
+  },
+  {
+    "word": "mitigate",
+    "partOfSpeech": "verb",
+    "definition": "to make something bad less severe or harmful",
+    "exampleIELTS": "Investment in renewable energy is essential if we are to mitigate the worst effects of climate change.",
+    "collocations": ["mitigate the effects", "mitigate the impact", "mitigate risks"],
+    "level": 3,
+    "tags": ["task2", "solution"]
+  },
+  {
+    "word": "alleviate",
+    "partOfSpeech": "verb",
+    "definition": "to make a problem or suffering less intense",
+    "exampleIELTS": "Conditional cash transfers have helped alleviate extreme poverty in several Latin American countries.",
+    "collocations": ["alleviate poverty", "alleviate pressure", "alleviate suffering"],
+    "level": 3,
+    "tags": ["task2", "solution"]
+  },
+  {
+    "word": "foster",
+    "partOfSpeech": "verb",
+    "definition": "to encourage the development of something",
+    "exampleIELTS": "Schools should foster critical thinking from an early age rather than rewarding mere memorisation.",
+    "collocations": ["foster creativity", "foster a culture of", "foster cooperation"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "undermine",
+    "partOfSpeech": "verb",
+    "definition": "to gradually weaken something, especially authority or confidence",
+    "exampleIELTS": "Excessive screen time risks undermining children's ability to concentrate on extended tasks.",
+    "collocations": ["undermine authority", "undermine confidence", "undermine efforts"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "perpetuate",
+    "partOfSpeech": "verb",
+    "definition": "to make something, especially a problem or belief, continue indefinitely",
+    "exampleIELTS": "Stereotypes in advertising can perpetuate harmful gender norms in the workplace.",
+    "collocations": ["perpetuate stereotypes", "perpetuate inequality", "perpetuate a cycle"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "hinder",
+    "partOfSpeech": "verb",
+    "definition": "to delay or make difficult the progress of something",
+    "exampleIELTS": "Excessive bureaucracy continues to hinder the adoption of telemedicine in rural communities.",
+    "collocations": ["hinder progress", "hinder development", "hinder access"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "justify",
+    "partOfSpeech": "verb",
+    "definition": "to show or prove to be right or reasonable",
+    "exampleIELTS": "Proponents argue that the financial cost of space exploration is justified by the technological spin-offs it produces.",
+    "collocations": ["justify the cost", "fully justified", "justify a decision"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "dismiss",
+    "partOfSpeech": "verb",
+    "definition": "to reject something as unimportant or invalid",
+    "exampleIELTS": "It would be a mistake to dismiss the concerns of parents regarding online safety simply as moral panic.",
+    "collocations": ["dismiss concerns", "dismiss out of hand", "dismiss as irrelevant"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "refute",
+    "partOfSpeech": "verb",
+    "definition": "to prove that a statement or theory is wrong",
+    "exampleIELTS": "Recent longitudinal studies have refuted the claim that streaming services reduce attention span in adolescents.",
+    "collocations": ["refute the claim", "refute the argument", "convincingly refute"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "prioritise",
+    "partOfSpeech": "verb",
+    "definition": "to treat something as more important than other matters",
+    "exampleIELTS": "Governments should prioritise long-term environmental protection over short-term economic gains.",
+    "collocations": ["prioritise long-term", "prioritise public health", "clearly prioritise"],
+    "level": 2,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "stance",
+    "partOfSpeech": "noun",
+    "definition": "the position or attitude one publicly takes on a matter",
+    "exampleIELTS": "The author adopts a critical stance towards the privatisation of higher education.",
+    "collocations": ["adopt a stance", "a critical stance", "soften one's stance"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "consensus",
+    "partOfSpeech": "noun",
+    "definition": "general agreement among a group",
+    "exampleIELTS": "There is a clear scientific consensus that human activity is the dominant cause of recent global warming.",
+    "collocations": ["scientific consensus", "reach a consensus", "broad consensus"],
+    "level": 2,
+    "tags": ["task2", "argument"]
+  },
+  {
+    "word": "rationale",
+    "partOfSpeech": "noun",
+    "definition": "the underlying reason or logic for a decision or belief",
+    "exampleIELTS": "The rationale for taxing sugary drinks is straightforward: to discourage consumption of products linked to obesity.",
+    "collocations": ["the rationale for", "a sound rationale", "provide a rationale"],
+    "level": 3,
+    "tags": ["task2", "argument"]
+  },
+  {
+    "word": "compelling",
+    "partOfSpeech": "adjective",
+    "definition": "strongly persuasive; difficult to argue against",
+    "exampleIELTS": "There is a compelling argument that universal basic income would simplify welfare and reduce administrative costs.",
+    "collocations": ["a compelling argument", "compelling evidence", "a compelling case"],
+    "level": 2,
+    "tags": ["task2", "argument"]
+  },
+  {
+    "word": "detrimental",
+    "partOfSpeech": "adjective",
+    "definition": "harmful or causing damage",
+    "exampleIELTS": "Excessive use of antibiotics has proven detrimental to long-term gut health in young children.",
+    "collocations": ["detrimental effect", "detrimental to health", "highly detrimental"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "inevitable",
+    "partOfSpeech": "adjective",
+    "definition": "certain to happen; unavoidable",
+    "exampleIELTS": "Some degree of automation in the manufacturing sector now appears inevitable.",
+    "collocations": ["seemingly inevitable", "all but inevitable", "an inevitable consequence"],
+    "level": 2,
+    "tags": ["task2", "modality"]
+  },
+  {
+    "word": "paramount",
+    "partOfSpeech": "adjective",
+    "definition": "more important than anything else",
+    "exampleIELTS": "When designing public spaces, accessibility for people with disabilities should be paramount.",
+    "collocations": ["of paramount importance", "paramount concern", "remain paramount"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "counterproductive",
+    "partOfSpeech": "adjective",
+    "definition": "having the opposite effect to the one intended",
+    "exampleIELTS": "Excessively strict drug laws can be counterproductive, pushing users away from treatment programmes.",
+    "collocations": ["counterproductive effect", "ultimately counterproductive", "prove counterproductive"],
+    "level": 3,
+    "tags": ["task2", "stance"]
+  },
+  {
+    "word": "implications",
+    "partOfSpeech": "noun",
+    "definition": "possible future effects or consequences of an action",
+    "exampleIELTS": "The widespread adoption of remote work has profound implications for urban housing markets.",
+    "collocations": ["far-reaching implications", "the implications of", "profound implications"],
+    "level": 2,
+    "tags": ["task2", "argument"]
+  },
+  {
+    "word": "trade-off",
+    "partOfSpeech": "noun",
+    "definition": "a balance between two desirable but incompatible features",
+    "exampleIELTS": "There is a clear trade-off between economic growth and environmental protection in many emerging economies.",
+    "collocations": ["a trade-off between", "an inevitable trade-off", "involves a trade-off"],
+    "level": 2,
+    "tags": ["task2", "argument"]
+  },
+  {
+    "word": "underpin",
+    "partOfSpeech": "verb",
+    "definition": "to support or form the basis of an argument or system",
+    "exampleIELTS": "Trust between citizens and institutions underpins every well-functioning democracy.",
+    "collocations": ["underpin the argument", "underpin democracy", "firmly underpin"],
+    "level": 3,
+    "tags": ["task2", "argument"]
   }
 ]
