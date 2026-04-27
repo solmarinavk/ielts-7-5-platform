@@ -5,13 +5,14 @@ import App from './App.jsx';
 import { ensureSettings } from './hooks/useSettings.js';
 import { getStreak, updateSettings } from './lib/db.js';
 import { generateAndPersistPlan } from './lib/plan-generator.js';
+import { seedVocabIfEmpty } from './lib/vocab-seed.js';
 import './styles/globals.css';
 
 const PLAN_LANG_VERSION = 2;
 
 async function bootstrap() {
   // Idempotent: creates default rows on first launch.
-  await Promise.all([ensureSettings(), getStreak()]);
+  await Promise.all([ensureSettings(), getStreak(), seedVocabIfEmpty()]);
 
   // Silent migration: if an existing plan was generated under the old Spanish
   // template, re-materialise it in English. generateAndPersistPlan preserves
