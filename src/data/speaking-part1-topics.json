@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "12 most common Part 1 topics in IELTS Speaking. Each topic has 5 typical question prompts the examiner might ask in a 4-5 minute Part 1 conversation."
+  },
+  "topics": [
+    {
+      "id": "p1-work",
+      "label": "Work or studies",
+      "questions": [
+        "Do you work, or are you a student?",
+        "What do you enjoy most about your job (or studies)?",
+        "Is there anything you would like to change about your work or studies?",
+        "What did you want to be when you were a child?",
+        "Do you think you will be doing the same job in five years?"
+      ]
+    },
+    {
+      "id": "p1-hometown",
+      "label": "Hometown",
+      "questions": [
+        "Where is your hometown?",
+        "What do you like most about it?",
+        "Has it changed much since you were a child?",
+        "Would you recommend it to a tourist?",
+        "Do you think you will live there in the future?"
+      ]
+    },
+    {
+      "id": "p1-home",
+      "label": "Home and accommodation",
+      "questions": [
+        "Do you live in a house or an apartment?",
+        "What is your favourite room in your home?",
+        "Is there anything you would change about your home?",
+        "Do you prefer living alone or with other people?",
+        "Would you like to live somewhere different in the future?"
+      ]
+    },
+    {
+      "id": "p1-hobbies",
+      "label": "Hobbies and free time",
+      "questions": [
+        "What do you usually do in your free time?",
+        "Did you have the same hobbies when you were a child?",
+        "Do you prefer indoor or outdoor activities?",
+        "How much free time do you have each week?",
+        "Are hobbies important? Why?"
+      ]
+    },
+    {
+      "id": "p1-food",
+      "label": "Food and cooking",
+      "questions": [
+        "What kind of food do you usually eat?",
+        "Do you enjoy cooking?",
+        "What is a typical dish from your country?",
+        "Do you prefer eating at home or in restaurants?",
+        "Have your eating habits changed in recent years?"
+      ]
+    },
+    {
+      "id": "p1-travel",
+      "label": "Travel and holidays",
+      "questions": [
+        "Do you enjoy travelling?",
+        "What kind of places do you like to visit?",
+        "Do you prefer travelling alone or with others?",
+        "Have you ever travelled abroad?",
+        "What is the best holiday you have ever had?"
+      ]
+    },
+    {
+      "id": "p1-music",
+      "label": "Music",
+      "questions": [
+        "What kind of music do you listen to?",
+        "Has your taste in music changed over the years?",
+        "Do you play a musical instrument?",
+        "When do you usually listen to music?",
+        "Do you ever go to concerts?"
+      ]
+    },
+    {
+      "id": "p1-reading",
+      "label": "Reading",
+      "questions": [
+        "Do you like reading?",
+        "What kind of books do you usually read?",
+        "Do you prefer paper books or digital books?",
+        "How much time do you spend reading each week?",
+        "Did you enjoy reading as a child?"
+      ]
+    },
+    {
+      "id": "p1-technology",
+      "label": "Technology and the internet",
+      "questions": [
+        "How often do you use the internet?",
+        "What kind of websites or apps do you use most?",
+        "Has technology made your life easier or more complicated?",
+        "Do you think children spend too much time on devices?",
+        "Could you imagine living without the internet?"
+      ]
+    },
+    {
+      "id": "p1-weather",
+      "label": "Weather and seasons",
+      "questions": [
+        "What is the weather usually like in your hometown?",
+        "Which season do you prefer and why?",
+        "Does the weather affect your mood?",
+        "Do you check the weather forecast often?",
+        "Has the weather in your country changed in recent years?"
+      ]
+    },
+    {
+      "id": "p1-shopping",
+      "label": "Shopping",
+      "questions": [
+        "Do you enjoy shopping?",
+        "What do you usually shop for?",
+        "Do you prefer shopping online or in shops?",
+        "How often do you go shopping for clothes?",
+        "Have your shopping habits changed in recent years?"
+      ]
+    },
+    {
+      "id": "p1-friends",
+      "label": "Friends",
+      "questions": [
+        "Do you have many close friends?",
+        "How often do you see your friends?",
+        "What kind of activities do you do with your friends?",
+        "Is it easy to make new friends as an adult?",
+        "How important is it to keep in touch with old friends?"
+      ]
+    }
+  ]
+}

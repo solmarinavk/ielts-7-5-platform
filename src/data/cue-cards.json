@@ -1,0 +1,497 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "30 high-quality Part 2 cue cards across the seven canonical IELTS Speaking categories: person, place, object, experience, event, activity, media. Each card has 4 prompt bullets and 3 Part 3 follow-up questions for the same theme."
+  },
+  "categories": [
+    { "id": "person", "label": "Person" },
+    { "id": "place", "label": "Place" },
+    { "id": "object", "label": "Object" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "event", "label": "Event" },
+    { "id": "activity", "label": "Activity" },
+    { "id": "media", "label": "Media" }
+  ],
+  "cards": [
+    {
+      "id": "cc-001",
+      "category": "person",
+      "prompt": "Describe a person who has had a significant influence on your life.",
+      "bullets": [
+        "Who this person is",
+        "How long you have known them",
+        "What they did that influenced you",
+        "And explain why their influence has been significant"
+      ],
+      "part3Questions": [
+        "What qualities make a person genuinely influential?",
+        "How does the influence of family compare with that of friends?",
+        "Do you think social media influencers have a positive or negative impact on young people?"
+      ]
+    },
+    {
+      "id": "cc-002",
+      "category": "person",
+      "prompt": "Describe a teacher you remember from your school years.",
+      "bullets": [
+        "Who the teacher was",
+        "What subject they taught",
+        "What was special about their teaching style",
+        "And explain why you still remember them"
+      ],
+      "part3Questions": [
+        "What makes a teacher truly memorable?",
+        "How has the role of teachers changed in the last twenty years?",
+        "Should teachers be paid more, and why?"
+      ]
+    },
+    {
+      "id": "cc-003",
+      "category": "person",
+      "prompt": "Describe an older person you admire.",
+      "bullets": [
+        "Who this person is",
+        "How you know them",
+        "What they have done in their life",
+        "And explain why you admire them"
+      ],
+      "part3Questions": [
+        "What can younger generations learn from older people?",
+        "Do you think older people are respected enough in your country?",
+        "How can communities support older people who live alone?"
+      ]
+    },
+    {
+      "id": "cc-004",
+      "category": "person",
+      "prompt": "Describe a friend who you would like to spend more time with.",
+      "bullets": [
+        "Who this friend is",
+        "How you became friends",
+        "What you usually do together",
+        "And explain why you would like to spend more time with them"
+      ],
+      "part3Questions": [
+        "What makes a friendship last for many years?",
+        "Are friendships made online as strong as those made face-to-face?",
+        "How do friendships change as people get older?"
+      ]
+    },
+    {
+      "id": "cc-005",
+      "category": "place",
+      "prompt": "Describe a place in your hometown that you find interesting.",
+      "bullets": [
+        "Where this place is",
+        "What you can do or see there",
+        "How often you go there",
+        "And explain why you find it interesting"
+      ],
+      "part3Questions": [
+        "Why do some places attract more tourists than others?",
+        "How important is it to preserve historical places in a city?",
+        "Should governments invest more in public spaces such as parks and squares?"
+      ]
+    },
+    {
+      "id": "cc-006",
+      "category": "place",
+      "prompt": "Describe a city you would like to visit in the future.",
+      "bullets": [
+        "Which city it is",
+        "What you know about it",
+        "What you would do there",
+        "And explain why you want to visit it"
+      ],
+      "part3Questions": [
+        "What factors usually influence people's choice of holiday destination?",
+        "How does international tourism affect local communities?",
+        "Is it better to travel abroad or to explore your own country?"
+      ]
+    },
+    {
+      "id": "cc-007",
+      "category": "place",
+      "prompt": "Describe a quiet place where you like to spend time alone.",
+      "bullets": [
+        "Where this place is",
+        "How often you go there",
+        "What you usually do there",
+        "And explain why you find it relaxing"
+      ],
+      "part3Questions": [
+        "Why do people sometimes need time alone?",
+        "Are quiet public places more difficult to find than they used to be?",
+        "How does the place where someone lives affect their wellbeing?"
+      ]
+    },
+    {
+      "id": "cc-008",
+      "category": "place",
+      "prompt": "Describe a building you find architecturally impressive.",
+      "bullets": [
+        "Where the building is",
+        "What it is used for",
+        "What it looks like",
+        "And explain why you find it impressive"
+      ],
+      "part3Questions": [
+        "What factors should architects consider when designing public buildings?",
+        "How important is it to preserve old buildings rather than demolish them?",
+        "Do modern buildings have less character than older ones?"
+      ]
+    },
+    {
+      "id": "cc-009",
+      "category": "object",
+      "prompt": "Describe a piece of technology you use every day.",
+      "bullets": [
+        "What this piece of technology is",
+        "How long you have had it",
+        "What you use it for",
+        "And explain how your life would be different without it"
+      ],
+      "part3Questions": [
+        "How has everyday technology changed how people communicate?",
+        "Are people becoming too dependent on technology?",
+        "Should there be limits on how much technology children can use?"
+      ]
+    },
+    {
+      "id": "cc-010",
+      "category": "object",
+      "prompt": "Describe a gift you received that means a lot to you.",
+      "bullets": [
+        "What the gift is",
+        "Who gave it to you and when",
+        "Why they gave it to you",
+        "And explain why it is meaningful"
+      ],
+      "part3Questions": [
+        "Is it more important for a gift to be expensive or thoughtful?",
+        "Why do people in different cultures give gifts on different occasions?",
+        "Do you think giving experiences is better than giving physical gifts?"
+      ]
+    },
+    {
+      "id": "cc-011",
+      "category": "object",
+      "prompt": "Describe an item of clothing you wear often.",
+      "bullets": [
+        "What the item is",
+        "Where you got it",
+        "When you wear it",
+        "And explain why you like it"
+      ],
+      "part3Questions": [
+        "How important is fashion in your culture?",
+        "Do you think people are too influenced by fashion trends?",
+        "What are the environmental costs of fast fashion?"
+      ]
+    },
+    {
+      "id": "cc-012",
+      "category": "object",
+      "prompt": "Describe a book that has had an impact on you.",
+      "bullets": [
+        "What the book is",
+        "When you read it",
+        "What it is about",
+        "And explain how it affected you"
+      ],
+      "part3Questions": [
+        "Why do some people read more than others?",
+        "How does reading fiction differ from reading non-fiction in terms of benefits?",
+        "Will printed books still exist in fifty years?"
+      ]
+    },
+    {
+      "id": "cc-013",
+      "category": "experience",
+      "prompt": "Describe a time when you helped someone.",
+      "bullets": [
+        "Who you helped",
+        "What the situation was",
+        "What you did to help",
+        "And explain how you felt afterwards"
+      ],
+      "part3Questions": [
+        "Why do some people volunteer their time to help others?",
+        "Should schools require students to do community service?",
+        "Is it the responsibility of governments or individuals to help those in need?"
+      ]
+    },
+    {
+      "id": "cc-014",
+      "category": "experience",
+      "prompt": "Describe a difficult decision you had to make.",
+      "bullets": [
+        "What the decision was",
+        "When you had to make it",
+        "What options you considered",
+        "And explain how you reached a decision"
+      ],
+      "part3Questions": [
+        "What makes some decisions harder than others?",
+        "Should young people make their own decisions about their education?",
+        "Is it better to make decisions quickly or to take time to think them through?"
+      ]
+    },
+    {
+      "id": "cc-015",
+      "category": "experience",
+      "prompt": "Describe a time when you learned something new.",
+      "bullets": [
+        "What you learned",
+        "How you learned it",
+        "How long it took to learn",
+        "And explain why this was important to you"
+      ],
+      "part3Questions": [
+        "What is the best way to learn a new skill as an adult?",
+        "Are formal qualifications more useful than learning by doing?",
+        "How has online learning changed how people acquire skills?"
+      ]
+    },
+    {
+      "id": "cc-016",
+      "category": "experience",
+      "prompt": "Describe a journey that did not go as planned.",
+      "bullets": [
+        "Where you were going",
+        "Who you were with",
+        "What went wrong",
+        "And explain how the experience affected you"
+      ],
+      "part3Questions": [
+        "Why do people enjoy travelling even when things go wrong?",
+        "How has technology changed the way people travel?",
+        "Is it better to plan a holiday in detail or to be spontaneous?"
+      ]
+    },
+    {
+      "id": "cc-017",
+      "category": "experience",
+      "prompt": "Describe a time when you had to speak in public.",
+      "bullets": [
+        "What the occasion was",
+        "Who you spoke to",
+        "What you said",
+        "And explain how you felt"
+      ],
+      "part3Questions": [
+        "Why do many people fear public speaking?",
+        "Should public-speaking skills be taught in schools?",
+        "How important is it for professionals to communicate well in public?"
+      ]
+    },
+    {
+      "id": "cc-018",
+      "category": "event",
+      "prompt": "Describe a celebration that is important in your country.",
+      "bullets": [
+        "What the celebration is",
+        "When it happens",
+        "How people typically celebrate",
+        "And explain why it is significant"
+      ],
+      "part3Questions": [
+        "Why do traditions remain important even in modern societies?",
+        "Are national celebrations becoming more commercial?",
+        "Should children learn about the cultural traditions of other countries?"
+      ]
+    },
+    {
+      "id": "cc-019",
+      "category": "event",
+      "prompt": "Describe an event you attended that you enjoyed.",
+      "bullets": [
+        "What the event was",
+        "Who you went with",
+        "What happened during the event",
+        "And explain why you enjoyed it"
+      ],
+      "part3Questions": [
+        "Are live events more engaging than watching them online?",
+        "How do large public events affect a city's economy?",
+        "Should governments fund cultural events out of public money?"
+      ]
+    },
+    {
+      "id": "cc-020",
+      "category": "event",
+      "prompt": "Describe a time when you celebrated an achievement.",
+      "bullets": [
+        "What the achievement was",
+        "How you celebrated",
+        "Who you celebrated with",
+        "And explain why this achievement was important to you"
+      ],
+      "part3Questions": [
+        "Is it healthy to celebrate small achievements as well as big ones?",
+        "How can families help children take pride in their achievements?",
+        "Are individual achievements valued more than team achievements in your culture?"
+      ]
+    },
+    {
+      "id": "cc-021",
+      "category": "activity",
+      "prompt": "Describe a hobby you would like to take up.",
+      "bullets": [
+        "What the hobby is",
+        "How you first heard about it",
+        "Why it appeals to you",
+        "And explain what you would need to start"
+      ],
+      "part3Questions": [
+        "Why is it important for people to have hobbies?",
+        "Do hobbies bring people together or push them apart?",
+        "How have hobbies changed in the last generation?"
+      ]
+    },
+    {
+      "id": "cc-022",
+      "category": "activity",
+      "prompt": "Describe a sport or physical activity you enjoy.",
+      "bullets": [
+        "What the activity is",
+        "When you do it",
+        "Who you do it with",
+        "And explain how it makes you feel"
+      ],
+      "part3Questions": [
+        "Why do many adults stop being physically active?",
+        "Should physical education be compulsory in schools?",
+        "How can governments encourage healthier lifestyles?"
+      ]
+    },
+    {
+      "id": "cc-023",
+      "category": "activity",
+      "prompt": "Describe a skill you have that you are proud of.",
+      "bullets": [
+        "What the skill is",
+        "How you learned it",
+        "How long it took to develop",
+        "And explain why you are proud of it"
+      ],
+      "part3Questions": [
+        "Are practical skills valued as much as academic skills today?",
+        "Should schools teach more life skills?",
+        "Why are some skills passed down through generations?"
+      ]
+    },
+    {
+      "id": "cc-024",
+      "category": "activity",
+      "prompt": "Describe a meal you enjoyed cooking.",
+      "bullets": [
+        "What you cooked",
+        "When you cooked it",
+        "Who you cooked it for",
+        "And explain why you enjoyed making it"
+      ],
+      "part3Questions": [
+        "Why are home-cooked meals becoming less common in many countries?",
+        "How is food connected to identity and culture?",
+        "What can governments do to promote healthier eating?"
+      ]
+    },
+    {
+      "id": "cc-025",
+      "category": "media",
+      "prompt": "Describe a film or series that you would recommend.",
+      "bullets": [
+        "What it is",
+        "What it is about",
+        "Who would enjoy it",
+        "And explain why you recommend it"
+      ],
+      "part3Questions": [
+        "Why have streaming platforms changed how people watch films?",
+        "Do films from your country accurately represent local life?",
+        "Should governments support their own film industries?"
+      ]
+    },
+    {
+      "id": "cc-026",
+      "category": "media",
+      "prompt": "Describe a podcast or radio programme you like.",
+      "bullets": [
+        "What it is",
+        "How often you listen to it",
+        "What it covers",
+        "And explain why you find it interesting"
+      ],
+      "part3Questions": [
+        "Why has audio content become so popular again?",
+        "Is podcasting a reliable source of information?",
+        "How do podcasts compare with traditional news media?"
+      ]
+    },
+    {
+      "id": "cc-027",
+      "category": "media",
+      "prompt": "Describe a piece of news that caught your attention recently.",
+      "bullets": [
+        "What the news was about",
+        "Where you heard or read it",
+        "How widely it was reported",
+        "And explain why it caught your attention"
+      ],
+      "part3Questions": [
+        "Has social media made news consumption better or worse?",
+        "How can people tell reliable news sources from unreliable ones?",
+        "Should governments regulate news media more strictly?"
+      ]
+    },
+    {
+      "id": "cc-028",
+      "category": "media",
+      "prompt": "Describe a website or app you use often.",
+      "bullets": [
+        "What it is",
+        "How long you have used it",
+        "What you use it for",
+        "And explain how it has been useful to you"
+      ],
+      "part3Questions": [
+        "Are people becoming too dependent on apps for everyday tasks?",
+        "How can users protect their privacy online?",
+        "Should children's access to social media be restricted by law?"
+      ]
+    },
+    {
+      "id": "cc-029",
+      "category": "experience",
+      "prompt": "Describe a time when you felt proud of someone close to you.",
+      "bullets": [
+        "Who the person is",
+        "What they achieved",
+        "How they achieved it",
+        "And explain why you felt proud"
+      ],
+      "part3Questions": [
+        "How do family members influence each other's achievements?",
+        "Is it healthy for parents to be very ambitious for their children?",
+        "Should success be measured in financial or personal terms?"
+      ]
+    },
+    {
+      "id": "cc-030",
+      "category": "place",
+      "prompt": "Describe a natural place you have visited.",
+      "bullets": [
+        "Where the place is",
+        "When you visited it",
+        "What it looks like",
+        "And explain how the visit made you feel"
+      ],
+      "part3Questions": [
+        "Are people in your country becoming more or less interested in nature?",
+        "How can governments balance tourism with conservation?",
+        "Should children spend more time in natural environments?"
+      ]
+    }
+  ]
+}
