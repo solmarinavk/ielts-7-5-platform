@@ -7,6 +7,7 @@ import { ensureSettings } from './hooks/useSettings.js';
 import { getStreak, updateSettings } from './lib/db.js';
 import { generateAndPersistPlan } from './lib/plan-generator.js';
 import { seedVocabIfEmpty } from './lib/vocab-seed.js';
+import { pruneOldAudio } from './lib/audio-cleanup.js';
 import './styles/globals.css';
 
 // v3 introduces the adaptive plan shape (standard / compressed / minimal),
@@ -39,6 +40,15 @@ async function bootstrap() {
     // eslint-disable-next-line no-console
     console.error('Plan migration failed (non-fatal):', err);
   }
+
+  // Audio retention: drop blobs older than 14 days while keeping transcripts.
+  // Runs after the rest of bootstrap so it never blocks first paint.
+  setTimeout(() => {
+    pruneOldAudio().catch((err) => {
+      // eslint-disable-next-line no-console
+      console.warn('Audio cleanup failed:', err);
+    });
+  }, 2000);
 
   // Honor stored theme preference before first paint.
   try {
