@@ -8,7 +8,10 @@ import { generateAndPersistPlan } from './lib/plan-generator.js';
 import { seedVocabIfEmpty } from './lib/vocab-seed.js';
 import './styles/globals.css';
 
-const PLAN_LANG_VERSION = 2;
+// v3 introduces the adaptive plan shape (standard / compressed / minimal),
+// so any plan persisted under v1 (Spanish) or v2 (English fixed-45) gets
+// re-materialised on first load. Block completion state is preserved.
+const PLAN_LANG_VERSION = 3;
 
 async function bootstrap() {
   // Idempotent: creates default rows on first launch.

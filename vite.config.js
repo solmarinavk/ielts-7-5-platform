@@ -28,6 +28,13 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,json,woff2}'],
         navigateFallback: '/index.html',
+        // Force the new service worker to take control on the very next page
+        // load instead of waiting for every tab to be closed. Combined with
+        // cleanupOutdatedCaches, this prevents stale precache from serving
+        // the old app shell after a fresh deploy.
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,

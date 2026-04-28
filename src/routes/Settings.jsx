@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addDays, format } from 'date-fns';
 import { useSettings } from '../hooks/useSettings.js';
 import { updateSettings, clearAllData } from '../lib/db.js';
-import { generateAndPersistPlan } from '../lib/plan-generator.js';
+import { generateAndPersistPlan, derivePlanShape } from '../lib/plan-generator.js';
 import TopBar from '../components/TopBar.jsx';
-import { Save, Trash2, RefreshCw, Sun, Moon, Monitor } from 'lucide-react';
+import { Save, Trash2, RefreshCw, Sun, Moon, Monitor, AlertTriangle, Info } from 'lucide-react';
 
 const SECTIONS = ['listening', 'reading', 'writing', 'speaking'];
 const BAND_OPTIONS = [6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0];
@@ -100,6 +100,11 @@ export default function Settings() {
     location.reload();
   }
 
+  const planShape = useMemo(
+    () => (form.examDate ? derivePlanShape(form.examDate) : null),
+    [form.examDate],
+  );
+
   return (
     <>
       <TopBar title="Settings" back />
@@ -136,6 +141,7 @@ export default function Settings() {
               ))}
             </select>
           </Field>
+          {planShape ? <PlanShapeBanner shape={planShape} /> : null}
           <Field label="Baseline band (estimate)">
             <select
               className="input"
@@ -211,6 +217,83 @@ function Field({ label, children }) {
       <span className="label block mb-1">{label}</span>
       {children}
     </label>
+  );
+}
+
+function PlanShapeBanner({ shape }) {
+  if (shape.mode === 'past') {
+    return (
+      <div className="rounded-xl border border-danger/40 bg-danger/5 p-3 flex gap-2">
+        <AlertTriangle className="w-4 h-4 text-danger shrink-0 mt-0.5" />
+        <div className="text-xs text-slate-700 dark:text-slate-200">
+          <p className="font-semibold text-danger">Exam date is in the past</p>
+          <p className="mt-0.5 text-slate-600 dark:text-slate-300">
+            Set a date in the future to generate a plan.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (shape.mode === 'minimal') {
+    return (
+      <div className="rounded-xl border border-danger/40 bg-danger/5 p-3 flex gap-2">
+        <AlertTriangle className="w-4 h-4 text-danger shrink-0 mt-0.5" />
+        <div className="text-xs text-slate-700 dark:text-slate-200">
+          <p className="font-semibold text-danger">Insufficient prep window</p>
+          <p className="mt-0.5 text-slate-600 dark:text-slate-300">
+            Only {shape.daysAvailable} day{shape.daysAvailable === 1 ? '' : 's'} until your exam.
+            The plan drops Diagnostic, Build and Refinement and runs Mock-intensive then Taper only.
+          </p>
+          <PhaseBreakdown shape={shape} />
+        </div>
+      </div>
+    );
+  }
+
+  const isCompressed = shape.mode === 'compressed';
+  return (
+    <div
+      className={
+        'rounded-xl border p-3 flex gap-2 ' +
+        (isCompressed
+          ? 'border-warning/40 bg-warning/5'
+          : 'border-accent/30 bg-accent/5')
+      }
+    >
+      <Info
+        className={'w-4 h-4 shrink-0 mt-0.5 ' + (isCompressed ? 'text-warning' : 'text-accent')}
+      />
+      <div className="text-xs text-slate-700 dark:text-slate-200">
+        <p className="font-semibold">
+          {isCompressed
+            ? `Compressed plan · ${shape.daysAvailable} days from today`
+            : `Standard plan · ${shape.daysAvailable} days until exam`}
+        </p>
+        <p className="mt-0.5 text-slate-600 dark:text-slate-300">
+          {isCompressed
+            ? 'Phases are scaled proportionally and day 1 starts today.'
+            : `Plan starts on ${shape.startDate}; the days before are buffer.`}
+        </p>
+        <PhaseBreakdown shape={shape} />
+      </div>
+    </div>
+  );
+}
+
+function PhaseBreakdown({ shape }) {
+  return (
+    <ul className="mt-2 grid grid-cols-2 gap-x-3 gap-y-0.5 font-mono text-[11px] text-slate-500 dark:text-slate-400">
+      {shape.ranges.map((p) => {
+        const len = p.range[1] - p.range[0] + 1;
+        return (
+          <li key={p.id}>
+            <span className="text-slate-700 dark:text-slate-200">{p.label}</span>
+            <span className="ml-1">{len}d (d{p.range[0]}–d{p.range[1]})</span>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
