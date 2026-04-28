@@ -1,11 +1,31 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { addDays, format } from 'date-fns';
+import { addDays, format, parseISO } from 'date-fns';
 import { useSettings } from '../hooks/useSettings.js';
-import { updateSettings, clearAllData } from '../lib/db.js';
+import {
+  updateSettings,
+  clearAllData,
+  resetPlanOnly,
+  exportAllData,
+  importBackup,
+  saveAutoBackup,
+  getAutoBackupTimestamp,
+} from '../lib/db.js';
 import { generateAndPersistPlan, derivePlanShape } from '../lib/plan-generator.js';
 import TopBar from '../components/TopBar.jsx';
-import { Save, Trash2, RefreshCw, Sun, Moon, Monitor, AlertTriangle, Info } from 'lucide-react';
+import {
+  Save,
+  Trash2,
+  RefreshCw,
+  Sun,
+  Moon,
+  Monitor,
+  AlertTriangle,
+  Info,
+  Download,
+  Upload,
+  Eraser,
+} from 'lucide-react';
 
 const SECTIONS = ['listening', 'reading', 'writing', 'speaking'];
 const BAND_OPTIONS = [6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0];
@@ -34,6 +54,15 @@ export default function Settings() {
       });
     }
   }, [settings, form]);
+
+  // Hooks MUST come before any early return to keep call order stable across
+  // renders (Rules of Hooks). The previous Settings layout placed this
+  // useMemo below the `if (!form) return` guard, which crashed the page
+  // after the first render once form was populated.
+  const planShape = useMemo(
+    () => (form?.examDate ? derivePlanShape(form.examDate) : null),
+    [form?.examDate],
+  );
 
   if (!form) {
     return (
@@ -100,10 +129,51 @@ export default function Settings() {
     location.reload();
   }
 
-  const planShape = useMemo(
-    () => (form.examDate ? derivePlanShape(form.examDate) : null),
-    [form.examDate],
-  );
+  async function resetPlanOnlyAndRegenerate() {
+    const ok = confirm(
+      'Erase the daily plan and re-generate it? Your vocab, mocks, errors, writing and speaking are kept untouched.',
+    );
+    if (!ok) return;
+    await resetPlanOnly();
+    if (form.examDate) {
+      setGenerating(true);
+      await generateAndPersistPlan(form.examDate);
+      setGenerating(false);
+    }
+    setSavedFlash(true);
+    setTimeout(() => setSavedFlash(false), 1500);
+  }
+
+  async function downloadFullBackup() {
+    const payload = await exportAllData({ includeAudio: false });
+    const json = JSON.stringify(payload, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `ielts-backup-${format(new Date(), 'yyyy-MM-dd-HHmm')}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    await saveAutoBackup();
+  }
+
+  async function handleImportFile(file) {
+    try {
+      const text = await file.text();
+      const payload = JSON.parse(text);
+      const ok = confirm(
+        `Import backup exported on ${payload.exportedAt || 'unknown date'}? This REPLACES all current data.`,
+      );
+      if (!ok) return;
+      await importBackup(payload);
+      alert('Backup imported. Reloading the app.');
+      location.reload();
+    } catch (err) {
+      alert(`Import failed: ${err.message || err}`);
+    }
+  }
 
   return (
     <>
@@ -200,14 +270,85 @@ export default function Settings() {
           </button>
         </section>
 
-        <section className="card p-4 border-danger/40 space-y-3">
+        <BackupSection
+          onDownload={downloadFullBackup}
+          onImport={handleImportFile}
+        />
+
+        <section className="card p-4 border-danger/40 space-y-2">
           <h2 className="text-sm font-semibold text-danger">Danger zone</h2>
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            Try Reset plan first — it preserves vocab, mocks and the error log.
+          </p>
+          <button
+            onClick={resetPlanOnlyAndRegenerate}
+            disabled={generating}
+            className="btn-outline w-full text-warning border-warning/50"
+          >
+            <Eraser className="w-4 h-4" /> Reset plan only
+          </button>
           <button onClick={resetEverything} className="btn-outline w-full text-danger border-danger/50">
-            <Trash2 className="w-4 h-4" /> Erase all local data
+            <Trash2 className="w-4 h-4" /> Reset all data
           </button>
         </section>
       </main>
     </>
+  );
+}
+
+function BackupSection({ onDownload, onImport }) {
+  const inputRef = useRef(null);
+  const [lastBackupAt, setLastBackupAt] = useState(getAutoBackupTimestamp());
+
+  // Re-read the timestamp when the section mounts and after a manual download.
+  useEffect(() => {
+    setLastBackupAt(getAutoBackupTimestamp());
+  }, []);
+
+  const lastLabel = lastBackupAt
+    ? format(parseISO(lastBackupAt), "MMM d, yyyy 'at' HH:mm")
+    : 'never';
+
+  function pickFile() {
+    inputRef.current?.click();
+  }
+  async function handleChange(e) {
+    const file = e.target.files?.[0];
+    if (file) await onImport(file);
+    if (inputRef.current) inputRef.current.value = '';
+  }
+  async function handleDownload() {
+    await onDownload();
+    setLastBackupAt(getAutoBackupTimestamp());
+  }
+
+  return (
+    <section className="card p-4 space-y-3">
+      <div className="flex items-baseline justify-between">
+        <h2 className="text-sm font-semibold">Backups</h2>
+        <span className="text-[11px] text-slate-500 dark:text-slate-400">
+          Auto-backup: {lastLabel}
+        </span>
+      </div>
+      <p className="text-xs text-slate-500 dark:text-slate-400">
+        A snapshot of every table is kept in localStorage and refreshed after each
+        meaningful write (settings, mocks, vocab). Download the JSON to keep an
+        offline copy or restore on another device.
+      </p>
+      <button onClick={handleDownload} className="btn-outline w-full">
+        <Download className="w-4 h-4" /> Download full backup
+      </button>
+      <button onClick={pickFile} className="btn-outline w-full">
+        <Upload className="w-4 h-4" /> Import backup
+      </button>
+      <input
+        ref={inputRef}
+        type="file"
+        accept="application/json,.json"
+        onChange={handleChange}
+        className="hidden"
+      />
+    </section>
   );
 }
 

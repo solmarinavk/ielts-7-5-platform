@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
 import { Plus, Trash2, Save } from 'lucide-react';
 import TopBar from '../components/TopBar.jsx';
-import { db } from '../lib/db.js';
+import { db, saveAutoBackup } from '../lib/db.js';
 import {
   SECTIONS,
   SECTION_LABEL,
@@ -107,6 +107,10 @@ export default function MockNew() {
         }
       });
     }
+
+    // Best-effort: refresh the auto-backup so a fresh mock can survive any
+    // later render-time crash without going through the network.
+    saveAutoBackup().catch(() => {});
 
     setSaving(false);
     navigate(`/mocks/${mockId}`, { replace: true });

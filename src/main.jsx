@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 import { ensureSettings } from './hooks/useSettings.js';
 import { getStreak, updateSettings } from './lib/db.js';
 import { generateAndPersistPlan } from './lib/plan-generator.js';
@@ -14,16 +15,29 @@ import './styles/globals.css';
 const PLAN_LANG_VERSION = 3;
 
 async function bootstrap() {
-  // Idempotent: creates default rows on first launch.
-  await Promise.all([ensureSettings(), getStreak(), seedVocabIfEmpty()]);
+  // Idempotent: creates default rows on first launch. Each step is wrapped
+  // so one bad row in any table can't keep the app from booting; the user
+  // can still reach /settings → recovery options.
+  try {
+    await Promise.all([ensureSettings(), getStreak(), seedVocabIfEmpty()]);
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.error('Bootstrap step failed (non-fatal):', err);
+  }
 
-  // Silent migration: if an existing plan was generated under the old Spanish
-  // template, re-materialise it in English. generateAndPersistPlan preserves
-  // per-block completion state, so user progress is not lost.
-  const settings = await ensureSettings();
-  if (settings.examDate && (settings.planLangVersion ?? 1) < PLAN_LANG_VERSION) {
-    await generateAndPersistPlan(settings.examDate);
-    await updateSettings({ planLangVersion: PLAN_LANG_VERSION });
+  // Silent migration: if an existing plan was generated under an older
+  // template, re-materialise it. generateAndPersistPlan preserves per-block
+  // completion state by date. If migration itself throws, swallow the error
+  // and let the app render — the user can re-generate manually from Settings.
+  try {
+    const settings = await ensureSettings();
+    if (settings?.examDate && (settings.planLangVersion ?? 1) < PLAN_LANG_VERSION) {
+      await generateAndPersistPlan(settings.examDate);
+      await updateSettings({ planLangVersion: PLAN_LANG_VERSION });
+    }
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.error('Plan migration failed (non-fatal):', err);
   }
 
   // Honor stored theme preference before first paint.
@@ -39,9 +53,11 @@ async function bootstrap() {
 
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ErrorBoundary>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ErrorBoundary>
     </React.StrictMode>,
   );
 }

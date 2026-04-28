@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { Plus, Check, RotateCcw, X } from 'lucide-react';
 import TopBar from '../components/TopBar.jsx';
-import { db } from '../lib/db.js';
+import { db, saveAutoBackup } from '../lib/db.js';
 import { reviewCard, SRS_QUALITY } from '../lib/srs.js';
 import { useVocabQueue, useVocabStats } from '../hooks/useVocabQueue.js';
 import { cn } from '../lib/cn.js';
@@ -318,6 +318,7 @@ function AddTab({ onAdded }) {
       addedAt: new Date().toISOString(),
       source: 'manual',
     });
+    saveAutoBackup().catch(() => {});
     setSaving(false);
     onAdded?.();
   }
