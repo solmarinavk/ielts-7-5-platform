@@ -1,0 +1,220 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "30 prompts (15 T1 + 15 T2) modelled on real IELTS Academic styles. T1 includes line graph, bar chart, pie chart, table, multiple-graph, process diagram and map; T2 covers opinion, discussion, problem-solution, advantages-disadvantages and two-part."
+  },
+  "task1": [
+    {
+      "id": "t1-001",
+      "format": "line graph",
+      "prompt": "The line graph below shows the percentage of households owning a smartphone in four countries (UK, Germany, India, Brazil) between 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-002",
+      "format": "bar chart",
+      "prompt": "The bar chart below shows the number of international students enrolled in higher education in five English-speaking countries in 2010 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-003",
+      "format": "pie chart",
+      "prompt": "The pie charts below show the breakdown of household electricity consumption in a typical European home in 1995 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-004",
+      "format": "table",
+      "prompt": "The table below shows the average daily time (in minutes) spent on six activities by adults in three age groups (18-29, 30-49, 50+) in a European country in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-005",
+      "format": "multiple charts",
+      "prompt": "The two charts below show the proportion of energy generated from renewable sources in a country in 2010 and 2024, and the breakdown of those sources in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-006",
+      "format": "process diagram",
+      "prompt": "The diagram below shows the process by which recycled glass bottles are turned into new packaging. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-007",
+      "format": "map",
+      "prompt": "The two maps below show a coastal town in 1980 and today. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-008",
+      "format": "line graph",
+      "prompt": "The line graph below shows the average annual CO2 emissions per person (in tonnes) in four regions (North America, Europe, Asia-Pacific, Latin America) between 1990 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-009",
+      "format": "bar chart",
+      "prompt": "The bar chart below shows the percentage of people in five countries who reported working from home at least three days per week in 2019 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-010",
+      "format": "pie chart",
+      "prompt": "The pie charts below show how an average household budget is distributed in two cities (Lima and Mexico City) in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-011",
+      "format": "table",
+      "prompt": "The table below shows the percentage of journeys made by five modes of transport (car, bus, metro, bicycle, walking) in three European cities in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-012",
+      "format": "process diagram",
+      "prompt": "The diagram below shows how rainwater is captured, treated and distributed for residential use in a sustainable building. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-013",
+      "format": "map",
+      "prompt": "The two maps below show a university campus before and after a planned redevelopment. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-014",
+      "format": "multiple charts",
+      "prompt": "The line graph shows the unemployment rate in a country between 2000 and 2024, and the bar chart shows unemployment by age group in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    },
+    {
+      "id": "t1-015",
+      "format": "bar chart",
+      "prompt": "The bar chart below shows the number of books borrowed per capita from public libraries in five countries in 2010 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "minWords": 150,
+      "minutes": 20
+    }
+  ],
+  "task2": [
+    {
+      "id": "t2-001",
+      "type": "opinion",
+      "prompt": "Some people believe that universities should focus on providing academic skills, while others think that they should prepare students for their future careers. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-002",
+      "type": "discussion",
+      "prompt": "Many countries are moving towards cashless economies. What are the advantages and disadvantages of this trend?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-003",
+      "type": "problem-solution",
+      "prompt": "Air pollution in large cities is becoming an increasingly serious problem. What are the main causes, and what measures could governments and individuals take to address it?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-004",
+      "type": "advantages-disadvantages",
+      "prompt": "More and more employees are working from home rather than in an office. Do the advantages of this trend outweigh the disadvantages?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-005",
+      "type": "two-part",
+      "prompt": "In many countries, fewer young people are reading books for pleasure. Why might this be happening, and what could schools do to encourage reading?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-006",
+      "type": "opinion",
+      "prompt": "Some people argue that governments should invest more in public transport rather than building new roads. To what extent do you agree or disagree?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-007",
+      "type": "discussion",
+      "prompt": "Some people think that a single global language would benefit international cooperation, while others believe it would damage cultural identity. Discuss both views and give your opinion.",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-008",
+      "type": "problem-solution",
+      "prompt": "Childhood obesity has become a serious issue in many countries. What are the main causes of this problem, and what can be done at home, at school and at policy level to reduce it?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-009",
+      "type": "advantages-disadvantages",
+      "prompt": "Many universities now offer fully online degree programmes. What are the advantages and disadvantages of online learning compared with traditional in-person study?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-010",
+      "type": "two-part",
+      "prompt": "In some societies, people increasingly live alone rather than in family households. What are the reasons for this change, and what effects does it have on communities?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-011",
+      "type": "opinion",
+      "prompt": "Some people believe that exposing children to competition from an early age helps them succeed in life. Others argue that competition damages cooperation and self-esteem. Discuss both views and give your own opinion.",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-012",
+      "type": "discussion",
+      "prompt": "The use of artificial intelligence in the workplace is growing rapidly. Some welcome it as an opportunity, others see it as a threat to employment. Discuss both views and give your opinion.",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-013",
+      "type": "problem-solution",
+      "prompt": "Many traditional crafts and skills are disappearing in modern society. Why is this happening, and what can be done to preserve them?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-014",
+      "type": "advantages-disadvantages",
+      "prompt": "Some governments are introducing policies that limit screen time for children. Do the benefits of such policies outweigh the drawbacks?",
+      "minWords": 250,
+      "minutes": 40
+    },
+    {
+      "id": "t2-015",
+      "type": "two-part",
+      "prompt": "Mass tourism brings significant income to many countries but also causes environmental and social problems. What are the main negative effects of mass tourism, and how can they be addressed?",
+      "minWords": 250,
+      "minutes": 40
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "Paraphrased descriptors aligned to the official IELTS public band descriptors for Writing Task 1 and Task 2 (bands 5-9). Use these for self-assessment only — final examiner judgement is holistic.",
+    "criteria": {
+      "TR": "Task Response (Task 2) / Task Achievement (Task 1)",
+      "CC": "Coherence and Cohesion",
+      "LR": "Lexical Resource",
+      "GRA": "Grammatical Range and Accuracy"
+    }
+  },
+  "task1": {
+    "TR": {
+      "5": "Generally addresses the task; format may be inappropriate. Mechanical repetition of data. Key features may be missing or unclear; some inaccurate detail.",
+      "6": "Addresses the task and presents a clear overview. Selects appropriate information but key features may be inadequately covered. Some details inaccurate.",
+      "7": "Covers the requirements of the task. Presents a clear overview of main trends, differences or stages. Highlights key features but some details may be missing or imprecise.",
+      "8": "Covers all requirements sufficiently. Presents and highlights key features clearly. Reports details accurately.",
+      "9": "Fully satisfies all the requirements of the task. Clearly presents a fully developed response with skilfully highlighted key features and accurate detail."
+    },
+    "CC": {
+      "5": "Some organisation but no clear overall progression. Cohesive devices may be inadequate, inaccurate or overused. Repetition through lack of referencing or substitution.",
+      "6": "Information arranged coherently with overall progression. Cohesive devices used effectively but may be inaccurate or over-used. Referencing not always clear or appropriate.",
+      "7": "Logically organises information with clear progression. Range of cohesive devices used appropriately though there may be some over- or under-use.",
+      "8": "Sequences information and ideas logically. Manages all aspects of cohesion well. Uses paragraphing sufficiently and appropriately (when needed).",
+      "9": "Uses cohesion in such a way that it attracts no attention. Skilfully manages paragraphing (when relevant)."
+    },
+    "LR": {
+      "5": "Limited range, only just adequate for the task. Frequent errors in word choice, spelling and word formation may cause some difficulty for the reader.",
+      "6": "Adequate range. Attempts less common vocabulary but with some inaccuracy. Some errors in spelling and word formation but they don't impede communication.",
+      "7": "Sufficient range to allow flexibility and precision. Some less common items used with awareness of style and collocation. Occasional errors in word choice / spelling.",
+      "8": "Wide range used fluently and flexibly to convey precise meaning. Skilfully uses uncommon items though minor inaccuracies. Rare errors in spelling.",
+      "9": "Wide range with very natural and sophisticated control. Minor errors only as 'slips'."
+    },
+    "GRA": {
+      "5": "Limited range. Attempts complex sentences but they tend to be less accurate than simple ones. Frequent grammatical errors and punctuation faulty; can cause some difficulty for the reader.",
+      "6": "Mix of simple and complex sentences. Makes some errors but they rarely reduce communication.",
+      "7": "Variety of complex structures. Frequent error-free sentences. Good control of grammar and punctuation but may make a few errors.",
+      "8": "Wide range of structures. Most sentences error-free. Very occasional errors or inappropriacies.",
+      "9": "Wide range used flexibly and accurately. Rare minor errors only as 'slips'."
+    }
+  },
+  "task2": {
+    "TR": {
+      "5": "Addresses the task only partially. Format may be inappropriate. Position unclear and may shift; main ideas hard to identify, often inadequately developed or irrelevant.",
+      "6": "Addresses all parts of the task although some parts more fully than others. Position relevant though conclusions may become unclear or repetitive. Main ideas relevant but some may be insufficiently developed or unclear.",
+      "7": "Addresses all parts of the task; some parts more fully covered than others. Clear position throughout. Main ideas extended and supported but there may be a tendency to over-generalise or lack focus.",
+      "8": "Sufficiently addresses all parts of the task. Clear, well-developed position. Relevant, extended and supported ideas, though there may be a tendency to over-generalise.",
+      "9": "Fully addresses all parts of the task. Clear, fully developed position. Relevant, extended and well-supported ideas throughout."
+    },
+    "CC": {
+      "5": "Some organisation but no clear overall progression. Cohesive devices may be inadequate, inaccurate or overused. Repetition due to lack of referencing or substitution. Paragraphing inadequate.",
+      "6": "Coherent organisation with overall progression. Cohesive devices used but sometimes inaccurate or over-used. Reference and substitution may lack flexibility. Paragraphing may not always be logical.",
+      "7": "Logically organises with clear progression throughout. Range of cohesive devices appropriately used though there may be some over- or under-use. Each paragraph has a clear central topic.",
+      "8": "Sequences information and ideas logically. Manages all aspects of cohesion well. Uses paragraphing sufficiently and appropriately.",
+      "9": "Uses cohesion in such a way that it attracts no attention. Skilfully manages paragraphing."
+    },
+    "LR": {
+      "5": "Limited range, only just adequate. Frequent errors in word choice, spelling and word formation may cause some difficulty for the reader.",
+      "6": "Adequate range. Attempts to use less common vocabulary with some inaccuracy. Errors don't impede communication.",
+      "7": "Sufficient range to allow flexibility and precision. Some less common items with awareness of style and collocation. Occasional errors in word choice / spelling.",
+      "8": "Wide range used fluently and flexibly to convey precise meaning. Skilful use of uncommon items though minor inaccuracies. Rare errors in spelling.",
+      "9": "Wide range with very natural and sophisticated control. Minor errors only as 'slips'."
+    },
+    "GRA": {
+      "5": "Limited range. Attempts complex structures but they tend to be less accurate than simple ones. Frequent grammatical errors; punctuation may be faulty.",
+      "6": "Mix of simple and complex sentence forms. Some errors in grammar and punctuation but they rarely reduce communication.",
+      "7": "Variety of complex structures. Frequent error-free sentences. Good control of grammar and punctuation, with a few errors.",
+      "8": "Wide range of structures. Most sentences error-free. Very occasional errors or inappropriacies.",
+      "9": "Wide range used flexibly and accurately. Rare minor errors only as 'slips'."
+    }
+  }
+}
